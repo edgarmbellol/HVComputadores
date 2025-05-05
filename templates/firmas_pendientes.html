@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block title %}Firmas Pendientes{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <i class="fas fa-signature me-2"></i>
+                    Firmas Pendientes
+                </h2>
+                <p class="card-text text-muted">
+                    Mantenimientos pendientes por firma del responsable
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    {% for mantenimiento, equipo in mantenimientos %}
+    <div class="col-md-6 mb-4">
+        <div class="card h-100">
+            <div class="card-header bg-light">
+                <h5 class="card-title mb-0">
+                    <i class="fas fa-tools me-2"></i>
+                    Mantenimiento - {{ mantenimiento.Fecha }}
+                </h5>
+            </div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <h6 class="text-muted mb-2">Información del Equipo</h6>
+                    <p class="mb-1"><strong>Placa Serial:</strong> {{ equipo.placaSerial }}</p>
+                    <p class="mb-1"><strong>Nombre Equipo:</strong> {{ equipo.nombreEquipo }}</p>
+                    <p class="mb-1"><strong>Ubicación:</strong> {{ equipo.Ubicacion }}</p>
+                    <p class="mb-1"><strong>Sede:</strong> {{ equipo.Sede }}</p>
+                </div>
+                <div class="mb-3">
+                    <h6 class="text-muted mb-2">Detalles del Mantenimiento</h6>
+                    <p class="mb-1"><strong>Técnico:</strong> {{ mantenimiento.Tecnico }}</p>
+                    <p class="mb-1"><strong>Responsable:</strong> {{ mantenimiento.ResponsableEquipo }}</p>
+                    <p class="mb-1"><strong>Observaciones:</strong> {{ mantenimiento.Observaciones }}</p>
+                </div>
+                <div class="d-grid">
+                    <a href="{{ url_for('firmar_mantenimiento', direccionMac=mantenimiento.DireccionMac) }}" 
+                       class="btn btn-primary">
+                        <i class="fas fa-signature me-2"></i>
+                        Firmar Mantenimiento
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <div class="col-12">
+        <div class="alert alert-info">
+            <i class="fas fa-info-circle me-2"></i>
+            No hay mantenimientos pendientes de firma
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %} 

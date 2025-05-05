@@ -204,6 +204,54 @@ def crear_hoja_vida_pdf(equipo):
     elements.append(Paragraph("OBSERVACIONES", obs_style))
     elements.append(Paragraph(equipo.Observaciones or "Sin observaciones", normal_style))
     
+    # Mantenimientos
+    elements.append(Spacer(1, 20))
+    elements.append(Paragraph("HISTORIAL DE MANTENIMIENTOS", obs_style))
+    
+    # Obtener los mantenimientos del equipo
+    from app import db, Mantenimientos
+    mantenimientos = Mantenimientos.query.filter_by(DireccionMac=equipo.direccionMac).order_by(Mantenimientos.Fecha.desc()).all()
+    
+    if mantenimientos:
+        for mant in mantenimientos:
+            # Crear tabla para cada mantenimiento
+            mant_data = [
+                ["Fecha", mant.Fecha],
+                ["Técnico", mant.Tecnico],
+                ["Responsable", mant.ResponsableEquipo],
+                ["Observaciones", mant.Observaciones]
+            ]
+            
+            # Agregar firma si existe
+            if mant.FirmaResponsable:
+                try:
+                    # Convertir la firma base64 a imagen
+                    from base64 import b64decode
+                    firma_data = b64decode(mant.FirmaResponsable.split(',')[1])
+                    firma_img = Image(BytesIO(firma_data), width=2*inch, height=1*inch)
+                    mant_data.append(["Firma del Responsable", firma_img])
+                except Exception as e:
+                    print(f"Error al procesar la firma: {str(e)}")
+                    mant_data.append(["Firma del Responsable", "No disponible"])
+            else:
+                mant_data.append(["Firma del Responsable", "Pendiente"])
+            
+            mant_table = Table(mant_data, colWidths=[2*inch, 8*inch])
+            mant_table.setStyle(TableStyle([
+                ('BACKGROUND', (0, 0), (0, -1), verde_claro),
+                ('TEXTCOLOR', (0, 0), (0, -1), verde_oscuro),
+                ('FONTNAME', (0, 0), (0, -1), 'Helvetica-Bold'),
+                ('GRID', (0, 0), (-1, -1), 0.5, verde_medio),
+                ('PADDING', (0, 0), (-1, -1), 6),
+                ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
+                ('VALIGN', (0, 0), (-1, -1), 'MIDDLE'),
+            ]))
+            
+            elements.append(mant_table)
+            elements.append(Spacer(1, 10))
+    else:
+        elements.append(Paragraph("No hay mantenimientos registrados", normal_style))
+    
     # Generar el PDF
     doc.build(elements)
     

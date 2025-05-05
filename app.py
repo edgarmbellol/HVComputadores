@@ -1,15 +1,16 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, send_file
+from flask import Flask, render_template, request, redirect, url_for, flash, send_file, jsonify
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-import os
-import database as citisalud
-from openpyxl import Workbook
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
-from openpyxl.utils import get_column_letter
-from reporte import crear_hoja_vida
 from reporte_pdf import crear_hoja_vida_pdf
 from sqlalchemy import func
 from io import BytesIO
+import google.generativeai as genai
+import xml.etree.ElementTree as ET
+import json
+
+# Configuración de Gemini
+genai.configure(api_key='AIzaSyAZklbUnZmdsxROcfETW0VZY0Kjy9QqB5U')
+model = genai.GenerativeModel('gemini-1.5-flash')
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'Sopo2025*'
@@ -65,68 +66,75 @@ class Mantenimientos(db.Model):
     Observaciones = db.Column(db.Text)
     Tecnico = db.Column(db.String(100))
     ResponsableEquipo = db.Column(db.String(100))
+    FirmaResponsable = db.Column(db.String(500))  # Campo para almacenar la firma
 
 @app.route('/')
 def index():
     try:
-        # Verificar si hay registros en la tabla
-        total_registros = Datospc.query.count()
-        print(f"Total de registros en la tabla: {total_registros}")
+        # Obtener el término de búsqueda de la URL
+        busqueda = request.args.get('busqueda', '').strip()
         
-        # Obtener todos los registros para ver sus estados
-        todos_equipos = Datospc.query.all()
-        print("Estados de todos los registros:")
-        for equipo in todos_equipos:
-            print(f"Placa: {equipo.placaSerial}, Estado: {equipo.Estado}")
+        # Base query para equipos activos
+        query = Datospc.query.filter(func.trim(func.lower(Datospc.Estado)) == 'activo')
         
-        # Intentar la consulta filtrada
-
-        equipos = Datospc.query.filter(func.trim(func.lower(Datospc.Estado)) == 'activo').all()
-        print(f"Registros activos encontrados: {len(equipos)}")
+        # Si hay término de búsqueda, filtrar por ubicación
+        if busqueda:
+            query = query.filter(Datospc.Ubicacion.ilike(f'%{busqueda}%'))
         
-        return render_template('index.html', equipos=equipos)
+        # Ejecutar la consulta
+        equipos = query.all()
+        print(f"Registros encontrados: {len(equipos)}")
+        
+        return render_template('index.html', equipos=equipos, busqueda=busqueda)
     except Exception as e:
         print(f"Error al consultar la base de datos: {str(e)}")
-        return render_template('index.html', equipos=[])
+        return render_template('index.html', equipos=[], busqueda='')
 
 @app.route('/crear', methods=['GET', 'POST'])
 def crear():
     if request.method == 'POST':
+        # Verificar si la dirección MAC ya existe
+        mac_existente = Datospc.query.filter_by(direccionMac=request.form['direccionMac']).first()
+        if mac_existente:
+            flash('Error: Ya existe un equipo registrado con esta dirección MAC', 'error')
+            return redirect(url_for('crear'))
+
         nuevo_equipo = Datospc(
-            placaSerial=request.form['placaSerial'],
-            responsable=request.form['responsable'],
-            Ubicacion=request.form['Ubicacion'],
-            nombreEquipo=request.form['nombreEquipo'],
-            cpuFabricante=request.form['cpuFabricante'],
-            cpuSerial=request.form['cpuSerial'],
-            cpuPlaca=request.form['cpuPlaca'],
-            procesadorNombre=request.form['procesadorNombre'],
-            procesadorVelo=request.form['procesadorVelo'],
-            procesadorSerial=request.form['procesadorSerial'],
-            ram1Marca=request.form['ram1Marca'],
-            ram1capacidad=request.form['ram1capacidad'],
-            ram1Serial=request.form['ram1Serial'],
-            ram2Marca=request.form['ram2Marca'],
-            ram2Capacidad=request.form['ram2Capacidad'],
-            ram2Serial=request.form['ram2Serial'],
-            discoMarca=request.form['discoMarca'],
-            discoCapacidad=request.form['discoCapacidad'],
-            discoSerial=request.form['discoSerial'],
-            unidadCD=request.form['unidadCD'],
-            unidadCDSerial=request.form['unidadCDSerial'],
-            monitorMarca=request.form['monitorMarca'],
-            monitorModelo=request.form['monitorModelo'],
-            monitorSerial=request.form['monitorSerial'],
-            monitorPlaca=request.form['monitorPlaca'],
-            tecladoMarca=request.form['tecladoMarca'],
-            tecladoSerial=request.form['tecladoSerial'],
-            mouseMarca=request.form['mouseMarca'],
-            mouseSerial=request.form['mouseSerial'],
-            nombreUsuario=request.form['nombreUsuario'],
-            direccionMac=request.form['direccionMac'],
-            Observaciones=request.form['Observaciones'],
-            VPN=request.form['VPN'],
-            NombreRemoto=request.form['NombreRemoto'],
+            placaSerial=request.form.get('placaSerial', ''),
+            responsable=request.form.get('responsable', ''),
+            Ubicacion=request.form.get('Ubicacion', ''),
+            Sede=request.form.get('Sede', ''),
+            nombreEquipo=request.form.get('nombreEquipo', ''),
+            cpuFabricante=request.form.get('cpuFabricante', ''),
+            cpuSerial=request.form.get('cpuSerial', ''),
+            cpuPlaca=request.form.get('cpuPlaca', ''),
+            procesadorNombre=request.form.get('procesadorNombre', ''),
+            procesadorVelo=request.form.get('procesadorVelo', ''),
+            procesadorSerial=request.form.get('procesadorSerial', ''),
+            ram1Marca=request.form.get('ram1Marca', ''),
+            ram1capacidad=request.form.get('ram1capacidad', ''),
+            ram1Serial=request.form.get('ram1Serial', ''),
+            ram2Marca=request.form.get('ram2Marca', ''),
+            ram2Capacidad=request.form.get('ram2Capacidad', ''),
+            ram2Serial=request.form.get('ram2Serial', ''),
+            discoMarca=request.form.get('discoMarca', ''),
+            discoCapacidad=request.form.get('discoCapacidad', ''),
+            discoSerial=request.form.get('discoSerial', ''),
+            unidadCD=request.form.get('unidadCD', ''),
+            unidadCDSerial=request.form.get('unidadCDSerial', ''),
+            monitorMarca=request.form.get('monitorMarca', ''),
+            monitorModelo=request.form.get('monitorModelo', ''),
+            monitorSerial=request.form.get('monitorSerial', ''),
+            monitorPlaca=request.form.get('monitorPlaca', ''),
+            tecladoMarca=request.form.get('tecladoMarca', ''),
+            tecladoSerial=request.form.get('tecladoSerial', ''),
+            mouseMarca=request.form.get('mouseMarca', ''),
+            mouseSerial=request.form.get('mouseSerial', ''),
+            nombreUsuario=request.form.get('nombreUsuario', ''),
+            direccionMac=request.form['direccionMac'],  # Este campo es obligatorio
+            Observaciones=request.form.get('Observaciones', ''),
+            VPN=request.form.get('VPN', ''),
+            NombreRemoto=request.form.get('NombreRemoto', ''),
             Estado='Activo'
         )
         db.session.add(nuevo_equipo)
@@ -242,10 +250,120 @@ def hoja_vida_html(direccionMac):
     equipo = Datospc.query.get_or_404(direccionMac)
     mantenimientos = []
     if equipo.direccionMac:
-        mantenimientos = Mantenimientos.query.filter_by(DireccionMac=equipo.direccionMac).all()
+        mantenimientos = Mantenimientos.query.filter_by(DireccionMac=equipo.direccionMac).order_by(Mantenimientos.Fecha.desc()).all()
     return render_template('hoja_vida_equipo.html', equipo=equipo, mantenimientos=mantenimientos)
 
+@app.route('/procesar_xml', methods=['POST'])
+def procesar_xml():
+    if 'file' not in request.files:
+        return jsonify({'error': 'No se envió ningún archivo'}), 400
+    
+    file = request.files['file']
+    if file.filename == '':
+        return jsonify({'error': 'No se seleccionó ningún archivo'}), 400
+    
+    if not file.filename.lower().endswith('.xml'):
+        return jsonify({'error': 'El archivo debe ser XML'}), 400
+    
+    try:
+        # Leer el contenido del XML
+        xml_content = file.read().decode('utf-8')
+        print("Contenido XML leído correctamente")
+        
+        # Preparar el prompt para Gemini
+        prompt = f"""
+        Analiza el siguiente texto XML y extrae la siguiente información. Si no encuentras algún dato, responde "No encontrada".
+        IMPORTANTE: Debes responder SOLO con un objeto JSON válido, sin texto adicional antes o después, sin marcadores de código.
+        
+        Texto XML a analizar:
+        {xml_content}
+        
+        Necesito los siguientes datos en formato JSON:
+        {{
+            "placaSerial": "valor o No encontrada",
+            "cpuFabricante": "valor o No encontrada",
+            "cpuSerial": "valor o No encontrada",
+            "procesadorNombre": "valor o No encontrada",
+            "procesadorVelo": "valor o No encontrada",
+            "procesadorSerial": "valor o No encontrada",
+            "nombreEquipo": "valor o No encontrada",
+            "ram1Marca": "valor o No encontrada",
+            "ram1capacidad": "valor o No encontrada",
+            "ram1Serial": "valor o No encontrada",
+            "ram2Marca": "valor o No encontrada",
+            "ram2Capacidad": "valor o No encontrada",
+            "ram2Serial": "valor o No encontrada",
+            "discoCapacidad": "valor o No encontrada",
+            "discoSerial": "valor o No encontrada",
+            "nombreUsuario": "valor o No encontrada",
+            "direccionMac": "valor o No encontrada",
+            "unidadCD": "valor o No encontrada",
+            "unidadCDSerial": "valor o No encontrada",
+            "monitorMarca": "valor o No encontrada",
+            "monitorModelo": "valor o No encontrada",
+            "monitorSerial": "valor o No encontrada",
+            "tecladoMarca": "valor o No encontrada",
+            "tecladoSerial": "valor o No encontrada",
+            "mouseMarca": "valor o No encontrada",
+            "mouseSerial": "valor o No encontrada"
+        }}
+        """
+        
+        print("Enviando prompt a Gemini...")
+        # Obtener respuesta de Gemini
+        response = model.generate_content(prompt)
+        print("Respuesta recibida de Gemini:", response.text)
+        
+        try:
+            # Limpiar la respuesta de marcadores de código
+            json_text = response.text
+            json_text = json_text.replace('```json', '').replace('```', '').strip()
+            print("JSON limpio:", json_text)
+            
+            datos = json.loads(json_text)
+            print("JSON parseado correctamente")
+            return jsonify(datos)
+        except json.JSONDecodeError as e:
+            print("Error al parsear JSON:", str(e))
+            print("Texto recibido:", response.text)
+            return jsonify({'error': 'Error al procesar la respuesta de Gemini. Por favor, intente nuevamente.'}), 500
+        
+    except Exception as e:
+        print("Error general:", str(e))
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/firmas_pendientes')
+def firmas_pendientes():
+    try:
+        # Obtener mantenimientos sin firma
+        mantenimientos_pendientes = db.session.query(Mantenimientos, Datospc).\
+            join(Datospc, Mantenimientos.DireccionMac == Datospc.direccionMac).\
+            filter(Mantenimientos.FirmaResponsable.is_(None)).all()
+        
+        return render_template('firmas_pendientes.html', mantenimientos=mantenimientos_pendientes)
+    except Exception as e:
+        print(f"Error al consultar mantenimientos pendientes: {str(e)}")
+        return render_template('firmas_pendientes.html', mantenimientos=[])
+
+@app.route('/firmar_mantenimiento/<direccionMac>', methods=['GET', 'POST'])
+def firmar_mantenimiento(direccionMac):
+    if request.method == 'POST':
+        try:
+            mantenimiento = Mantenimientos.query.get_or_404(direccionMac)
+            mantenimiento.FirmaResponsable = request.form.get('firma')
+            db.session.commit()
+            flash('Firma registrada exitosamente', 'success')
+            return redirect(url_for('firmas_pendientes'))
+        except Exception as e:
+            flash(f'Error al registrar la firma: {str(e)}', 'error')
+            return redirect(url_for('firmas_pendientes'))
+    
+    mantenimiento = Mantenimientos.query.get_or_404(direccionMac)
+    equipo = Datospc.query.get_or_404(direccionMac)
+    return render_template('firmar.html', mantenimiento=mantenimiento, equipo=equipo)
+
 if __name__ == '__main__':
+    app.run(port=5001)
     with app.app_context():
         db.create_all()
-    app.run(debug=True) 
+    app.run(debug=True)

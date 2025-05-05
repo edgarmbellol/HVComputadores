@@ -23,6 +23,14 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
+                <!-- Botón para cargar XML -->
+                <div class="mb-3">
+                    <input type="file" id="xmlFile" accept=".xml,.XML" class="d-none">
+                    <button class="btn btn-primary" onclick="document.getElementById('xmlFile').click()">
+                        Cargar información desde XML
+                    </button>
+                </div>
+
                 <form method="POST" class="needs-validation" novalidate>
                     <div class="row">
                         <!-- Información Básica -->
@@ -255,5 +263,37 @@
             }, false)
         })
 })()
+
+document.getElementById('xmlFile').addEventListener('change', function(e) {
+    const file = e.target.files[0];
+    if (file) {
+        const formData = new FormData();
+        formData.append('file', file);
+
+        fetch('/procesar_xml', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert('Error: ' + data.error);
+                return;
+            }
+            
+            // Llenar el formulario con los datos recibidos
+            for (const [key, value] of Object.entries(data)) {
+                const input = document.getElementById(key);
+                if (input) {
+                    input.value = value;
+                }
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error al procesar el archivo XML');
+        });
+    }
+});
 </script>
 {% endblock %} 

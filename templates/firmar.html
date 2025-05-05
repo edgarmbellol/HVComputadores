@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Firmar Mantenimiento{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <i class="fas fa-signature me-2"></i>
+                    Firmar Mantenimiento
+                </h2>
+                <p class="card-text text-muted">
+                    Registre su firma para el mantenimiento del equipo
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <div class="mb-4">
+                    <h5 class="text-muted mb-3">Información del Equipo</h5>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Placa Serial:</strong> {{ equipo.placaSerial }}</p>
+                            <p><strong>Nombre Equipo:</strong> {{ equipo.nombreEquipo }}</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p><strong>Ubicación:</strong> {{ equipo.Ubicacion }}</p>
+                            <p><strong>Sede:</strong> {{ equipo.Sede }}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h5 class="text-muted mb-3">Detalles del Mantenimiento</h5>
+                    <p><strong>Fecha:</strong> {{ mantenimiento.Fecha }}</p>
+                    <p><strong>Técnico:</strong> {{ mantenimiento.Tecnico }}</p>
+                    <p><strong>Responsable:</strong> {{ mantenimiento.ResponsableEquipo }}</p>
+                    <p><strong>Observaciones:</strong> {{ mantenimiento.Observaciones }}</p>
+                </div>
+
+                <form method="POST" class="mt-4">
+                    <div class="mb-4">
+                        <label for="firma" class="form-label">Firma del Responsable</label>
+                        <div class="border rounded p-3 bg-light">
+                            <canvas id="firmaCanvas" class="border w-100" height="200"></canvas>
+                            <input type="hidden" name="firma" id="firmaInput">
+                        </div>
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-secondary btn-sm" onclick="limpiarFirma()">
+                                <i class="fas fa-eraser me-1"></i> Limpiar
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-2"></i> Guardar Firma
+                        </button>
+                        <a href="{{ url_for('firmas_pendientes') }}" class="btn btn-secondary">
+                            <i class="fas fa-times me-2"></i> Cancelar
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% block scripts %}
+<script>
+let canvas = document.getElementById('firmaCanvas');
+let ctx = canvas.getContext('2d');
+let isDrawing = false;
+let lastX = 0;
+let lastY = 0;
+
+// Ajustar el tamaño del canvas al contenedor
+function resizeCanvas() {
+    canvas.width = canvas.offsetWidth;
+}
+
+// Inicializar el canvas
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+// Eventos del mouse
+canvas.addEventListener('mousedown', startDrawing);
+canvas.addEventListener('mousemove', draw);
+canvas.addEventListener('mouseup', stopDrawing);
+canvas.addEventListener('mouseout', stopDrawing);
+
+// Eventos táctiles
+canvas.addEventListener('touchstart', handleTouch);
+canvas.addEventListener('touchmove', handleTouch);
+canvas.addEventListener('touchend', stopDrawing);
+
+function startDrawing(e) {
+    isDrawing = true;
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+}
+
+function draw(e) {
+    if (!isDrawing) return;
+    
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(e.offsetX, e.offsetY);
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 2;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+    
+    [lastX, lastY] = [e.offsetX, e.offsetY];
+    
+    // Guardar la firma en el input hidden
+    document.getElementById('firmaInput').value = canvas.toDataURL();
+}
+
+function stopDrawing() {
+    isDrawing = false;
+}
+
+function limpiarFirma() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    document.getElementById('firmaInput').value = '';
+}
+
+function handleTouch(e) {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const rect = canvas.getBoundingClientRect();
+    const x = touch.clientX - rect.left;
+    const y = touch.clientY - rect.top;
+    
+    if (e.type === 'touchstart') {
+        startDrawing({ offsetX: x, offsetY: y });
+    } else if (e.type === 'touchmove') {
+        draw({ offsetX: x, offsetY: y });
+    }
+}
+</script>
+{% endblock %}
+{% endblock %} 
