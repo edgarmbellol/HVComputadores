@@ -1,0 +1,317 @@
+{% extends "base.html" %}
+
+{% block title %}Hoja de Vida Equipo de Cómputo{% endblock %}
+
+{% block content %}
+<style>
+    .institucional-header {
+        background: linear-gradient(90deg, #2E7D32 60%, #1976D2 100%);
+        color: white;
+        padding: 1.5rem 1rem 1rem 1rem;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        flex-wrap: wrap;
+    }
+    .institucional-header img {
+        height: 60px;
+        margin-right: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .institucional-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+    .institucional-table th, .institucional-table td {
+        border: 1px solid #bdbdbd;
+        padding: 0.4rem 0.6rem;
+        font-size: 0.95rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        word-break: break-word;
+    }
+    .institucional-table th {
+        background: #C8E6C9 !important;
+        color: #2E7D32 !important;
+        font-weight: bold;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .institucional-section {
+        background: #f5f5f5;
+        border-radius: 6px;
+        margin-bottom: 1.2rem;
+        padding: 1rem 0.5rem;
+        box-shadow: 0 1px 4px #e0e0e0;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .institucional-section-title {
+        color: #1976D2;
+        font-weight: bold;
+        margin-bottom: 0.7rem;
+        font-size: 1.1rem;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+    .institucional-table {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .institucional-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+    @media (max-width: 768px) {
+        .institucional-header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1rem 0.5rem 0.5rem 0.5rem;
+        }
+        .institucional-header img {
+            margin-bottom: 0.5rem;
+        }
+        .institucional-section {
+            padding: 0.7rem 0.2rem;
+        }
+        .institucional-title {
+            font-size: 1rem;
+        }
+        .institucional-section-title {
+            font-size: 1rem;
+        }
+    }
+    @media print {
+        html, body {
+            background: white !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100%;
+            height: 100%;
+        }
+        .institucional-header {
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            page-break-after: avoid;
+        }
+        .institucional-section {
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            margin-bottom: 0.7rem !important;
+            padding: 0.7rem 0.7rem !important;
+        }
+        .institucional-table th, .institucional-table td {
+            font-size: 0.85rem !important;
+            padding: 0.25rem 0.4rem !important;
+        }
+        .institucional-title {
+            font-size: 1.1rem !important;
+        }
+        .no-print { display: none !important; }
+        @page {
+            size: A4 portrait;
+            margin: 1.2cm;
+        }
+    }
+</style>
+<div class="institucional-header">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Hospital">
+    <div>
+        <div class="institucional-title">E.S.E HOSPITAL DIVINO SALVADOR DE SOPO</div>
+        <div style="font-size: 0.95rem;">NIT. 860.023.878-9</div>
+        <div style="font-size: 1.1rem; font-weight: bold;">HOJA DE VIDA EQUIPOS DE CÓMPUTO</div>
+    </div>
+    <div style="text-align: right; font-size: 0.9rem;">
+        <div><b>TIPO DOCUMENTO:</b> FORMATO</div>
+        <div><b>PROCESO:</b> SISTEMAS</div>
+        <div><b>CÓDIGO:</b> GTC-ST-F-01</div>
+        <div><b>PÁGINA:</b> 1 de 1</div>
+        <div><b>REVISIÓN:</b> NOVIEMBRE 2021</div>
+        <div><b>VERSIÓN:</b> 02</div>
+    </div>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">1. DATOS DEL RESPONSABLE</div>
+    <table class="institucional-table w-100">
+        <tr>
+            <th>Nombre Responsable / Área encargada</th>
+            <th>Ubicación</th>
+            <th>Equipo</th>
+        </tr>
+        <tr>
+            <td>{{ equipo.responsable }}</td>
+            <td>{{ equipo.Ubicacion }}</td>
+            <td>{{ equipo.nombreEquipo }}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">2. DATOS DEL EQUIPO Y CONFIGURACIÓN DE HARDWARE</div>
+    <div class="institucional-table-wrapper">
+        <table class="institucional-table mb-2">
+            <tr><th colspan="5">2.1 CPU</th></tr>
+            <tr>
+                <th>CPU Marca</th><th>Modelo/Tipo</th><th>Placa Inventario</th><th>Serial</th><th></th>
+            </tr>
+            <tr>
+                <td>{{ equipo.cpuFabricante }}</td>
+                <td>{{ equipo.procesadorNombre }}</td>
+                <td>{{ equipo.cpuPlaca }}</td>
+                <td>{{ equipo.cpuSerial }}</td>
+                <td></td>
+            </tr>
+            <tr>
+                <th>Procesador Marca</th><th>Velocidad GHz</th><th>Serial</th><th colspan="2"></th>
+            </tr>
+            <tr>
+                <td>{{ equipo.procesadorNombre }}</td>
+                <td>{{ equipo.procesadorVelo }}</td>
+                <td>{{ equipo.procesadorSerial }}</td>
+                <td colspan="2"></td>
+            </tr>
+            <tr>
+                <th>Memoria RAM Marca</th><th>Tamaño</th><th>Serial</th><th>Marca 2</th><th>Tamaño 2</th>
+            </tr>
+            <tr>
+                <td>{{ equipo.ram1Marca }}</td>
+                <td>{{ equipo.ram1capacidad }}</td>
+                <td>{{ equipo.ram1Serial }}</td>
+                <td>{{ equipo.ram2Marca }}</td>
+                <td>{{ equipo.ram2Capacidad }}</td>
+            </tr>
+            <tr>
+                <th>Disco Duro Marca</th><th>Capacidad</th><th>Serial</th><th>Unidad CD/DVD</th><th>Serial Unidad CD/DVD</th>
+            </tr>
+            <tr>
+                <td>{{ equipo.discoMarca }}</td>
+                <td>{{ equipo.discoCapacidad }}</td>
+                <td>{{ equipo.discoSerial }}</td>
+                <td>{{ equipo.unidadCD }}</td>
+                <td>{{ equipo.unidadCDSerial }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="institucional-table-wrapper">
+        <table class="institucional-table mb-2">
+            <tr><th colspan="4">2.2 MONITOR</th></tr>
+            <tr>
+                <th>Marca</th><th>Modelo/Tipo</th><th>Placa Inventario</th><th>Serial</th>
+            </tr>
+            <tr>
+                <td>{{ equipo.monitorMarca }}</td>
+                <td>{{ equipo.monitorModelo }}</td>
+                <td>{{ equipo.monitorPlaca }}</td>
+                <td>{{ equipo.monitorSerial }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="institucional-table-wrapper">
+        <table class="institucional-table mb-2">
+            <tr><th colspan="4">2.3 TECLADO</th></tr>
+            <tr>
+                <th>Marca</th><th>Modelo/Tipo</th><th>Placa Inventario</th><th>Serial</th>
+            </tr>
+            <tr>
+                <td>{{ equipo.tecladoMarca }}</td>
+                <td></td>
+                <td></td>
+                <td>{{ equipo.tecladoSerial }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="institucional-table-wrapper">
+        <table class="institucional-table mb-2">
+            <tr><th colspan="4">2.4 MOUSE</th></tr>
+            <tr>
+                <th>Marca</th><th>Modelo/Tipo</th><th>Placa Inventario</th><th>Serial</th>
+            </tr>
+            <tr>
+                <td>{{ equipo.mouseMarca }}</td>
+                <td></td>
+                <td></td>
+                <td>{{ equipo.mouseSerial }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">3. CONFIGURACIÓN DE RED</div>
+    <table class="institucional-table w-100">
+        <tr>
+            <th>En red</th><th>Dirección IP</th><th>Dirección MAC</th><th>IP Fija</th>
+        </tr>
+        <tr>
+            <td>{% if equipo.VPN %}SI{% else %}NO{% endif %}</td>
+            <td></td>
+            <td>{{ equipo.direccionMac }}</td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">4. USUARIOS EQUIPO</div>
+    <table class="institucional-table w-100">
+        <tr>
+            <th>NOMBRE</th><th>DOMINIO</th><th>CONTRASEÑA</th><th>TIPO USUARIO</th>
+        </tr>
+        <tr>
+            <td>{{ equipo.nombreUsuario }}</td>
+            <td></td>
+            <td></td>
+            <td>estandar</td>
+        </tr>
+    </table>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">5. SOFTWARES INSTALADOS</div>
+    <table class="institucional-table w-100">
+        <tr>
+            <th>Sistema Operativo</th><th>Descripción/Versión</th><th>Licencia</th>
+        </tr>
+        <tr>
+            <td>Windows</td>
+            <td>{{ equipo.Observaciones }}</td>
+            <td>---</td>
+        </tr>
+    </table>
+</div>
+
+<div class="institucional-section">
+    <div class="institucional-section-title">6. MANTENIMIENTOS REALIZADOS</div>
+    <div class="institucional-table-wrapper">
+        <table class="institucional-table">
+            <tr>
+                <th>Fecha</th>
+                <th>Observaciones</th>
+                <th>Técnico</th>
+            </tr>
+            {% for mant in mantenimientos %}
+            <tr>
+                <td>{{ mant.Fecha }}</td>
+                <td>{{ mant.Observaciones }}</td>
+                <td>{{ mant.Tecnico }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="3" class="text-center text-muted">No hay mantenimientos registrados para este equipo</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+<div class="no-print mt-4 mb-4 text-end">
+    <button class="btn btn-primary" onclick="window.print()">
+        <i class="fas fa-print me-2"></i> Imprimir / Guardar PDF
+    </button>
+</div>
+{% endblock %} 

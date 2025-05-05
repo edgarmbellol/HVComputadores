@@ -1,0 +1,150 @@
+{% extends "base.html" %}
+
+{% block title %}Mantenimientos{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <i class="fas fa-tools me-2"></i>
+                    Registro de Mantenimientos
+                </h2>
+                <p class="card-text text-muted">
+                    Complete la información para registrar un nuevo mantenimiento
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-4">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-12 col-md-4 mb-3">
+                            <label for="DireccionMac" class="form-label">Equipo (Nombre - Ubicación)</label>
+                            <select class="form-select" id="DireccionMac" name="DireccionMac" required>
+                                <option value="" disabled selected>Seleccione un equipo</option>
+                                {% for equipo in equipos %}
+                                    <option value="{{ equipo.direccionMac }}">
+                                        {{ equipo.nombreEquipo }} - {{ equipo.Ubicacion }}
+                                    </option>
+                                {% endfor %}
+                            </select>
+                            <div class="invalid-feedback">Seleccione un equipo</div>
+                        </div>
+                        <div class="col-6 col-md-2 mb-3">
+                            <label for="Fecha" class="form-label">Fecha</label>
+                            <input type="date" class="form-control" id="Fecha" name="Fecha" required>
+                        </div>
+                        <div class="col-6 col-md-3 mb-3">
+                            <label for="Tecnico" class="form-label">Técnico</label>
+                            <input type="text" class="form-control" id="Tecnico" name="Tecnico" required>
+                        </div>
+                        <div class="col-12 col-md-3 mb-3">
+                            <label for="ResponsableEquipo" class="form-label">Responsable del Equipo</label>
+                            <input type="text" class="form-control" id="ResponsableEquipo" name="ResponsableEquipo" required>
+                        </div>
+                        <div class="col-12 mb-3">
+                            <label for="Observaciones" class="form-label">Observaciones</label>
+                            <textarea class="form-control" id="Observaciones" name="Observaciones" rows="2"></textarea>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-save me-2"></i> Registrar Mantenimiento
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title mb-3">
+                    <i class="fas fa-list me-2"></i> Lista de Mantenimientos
+                </h4>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="align-middle">
+                            <tr>
+                                <th>Equipo (MAC)</th>
+                                <th>Nombre Equipo</th>
+                                <th>Ubicación</th>
+                                <th>Fecha</th>
+                                <th>Técnico</th>
+                                <th>Responsable</th>
+                                <th>Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for mant in mantenimientos %}
+                            <tr>
+                                <td>{{ mant.DireccionMac }}</td>
+                                <td>{{ mant.nombreEquipo }}</td>
+                                <td>{{ mant.Ubicacion }}</td>
+                                <td>{{ mant.Fecha }}</td>
+                                <td>{{ mant.Tecnico }}</td>
+                                <td>{{ mant.ResponsableEquipo }}</td>
+                                <td>{{ mant.Observaciones }}</td>
+                            </tr>
+                            {% else %}
+                            <tr>
+                                <td colspan="7" class="text-center">
+                                    <div class="alert alert-info mb-0">
+                                        <i class="fas fa-info-circle me-2"></i>
+                                        No hay mantenimientos registrados
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+@media (max-width: 768px) {
+    .btn-group.flex-wrap > .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .btn-group.flex-wrap {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    .table-responsive {
+        overflow-x: auto;
+    }
+}
+</style>
+
+<script>
+// Validación de formulario
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+</script>
+{% endblock %} 

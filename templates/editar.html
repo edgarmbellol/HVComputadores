@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block title %}Editar Equipo{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <i class="fas fa-edit me-2"></i>
+                    Editar Equipo
+                </h2>
+                <p class="card-text text-muted">
+                    Modifique la información del equipo de cómputo
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <form method="POST" class="needs-validation" novalidate>
+                    <div class="row">
+                        <!-- Información Básica -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Información Básica
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="placaSerial" class="form-label">Placa Serial</label>
+                                    <input type="text" class="form-control" id="placaSerial" value="{{ equipo.placaSerial }}" disabled>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="responsable" class="form-label">Responsable</label>
+                                    <input type="text" class="form-control" id="responsable" name="responsable" value="{{ equipo.responsable }}" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="Ubicacion" class="form-label">Ubicación</label>
+                                    <input type="text" class="form-control" id="Ubicacion" name="Ubicacion" value="{{ equipo.Ubicacion }}" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="Sede" class="form-label">Sede</label>
+                                    <input type="text" class="form-control" id="Sede" name="Sede" value="{{ equipo.Sede }}" required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="nombreEquipo" class="form-label">Nombre del Equipo</label>
+                                    <input type="text" class="form-control" id="nombreEquipo" name="nombreEquipo" value="{{ equipo.nombreEquipo }}" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CPU y Procesador -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-microchip me-2"></i>
+                                CPU y Procesador
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="cpuFabricante" class="form-label">Fabricante CPU</label>
+                                    <input type="text" class="form-control" id="cpuFabricante" name="cpuFabricante" value="{{ equipo.cpuFabricante }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="cpuSerial" class="form-label">Serial CPU</label>
+                                    <input type="text" class="form-control" id="cpuSerial" name="cpuSerial" value="{{ equipo.cpuSerial }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="cpuPlaca" class="form-label">Placa CPU</label>
+                                    <input type="text" class="form-control" id="cpuPlaca" name="cpuPlaca" value="{{ equipo.cpuPlaca }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="procesadorNombre" class="form-label">Nombre Procesador</label>
+                                    <input type="text" class="form-control" id="procesadorNombre" name="procesadorNombre" value="{{ equipo.procesadorNombre }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="procesadorVelo" class="form-label">Velocidad Procesador</label>
+                                    <input type="text" class="form-control" id="procesadorVelo" name="procesadorVelo" value="{{ equipo.procesadorVelo }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="procesadorSerial" class="form-label">Serial Procesador</label>
+                                    <input type="text" class="form-control" id="procesadorSerial" name="procesadorSerial" value="{{ equipo.procesadorSerial }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Memoria RAM -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-memory me-2"></i>
+                                Memoria RAM
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram1Marca" class="form-label">Marca RAM 1</label>
+                                    <input type="text" class="form-control" id="ram1Marca" name="ram1Marca" value="{{ equipo.ram1Marca }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram1capacidad" class="form-label">Capacidad RAM 1</label>
+                                    <input type="text" class="form-control" id="ram1capacidad" name="ram1capacidad" value="{{ equipo.ram1capacidad }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram1Serial" class="form-label">Serial RAM 1</label>
+                                    <input type="text" class="form-control" id="ram1Serial" name="ram1Serial" value="{{ equipo.ram1Serial }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram2Marca" class="form-label">Marca RAM 2</label>
+                                    <input type="text" class="form-control" id="ram2Marca" name="ram2Marca" value="{{ equipo.ram2Marca }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram2Capacidad" class="form-label">Capacidad RAM 2</label>
+                                    <input type="text" class="form-control" id="ram2Capacidad" name="ram2Capacidad" value="{{ equipo.ram2Capacidad }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="ram2Serial" class="form-label">Serial RAM 2</label>
+                                    <input type="text" class="form-control" id="ram2Serial" name="ram2Serial" value="{{ equipo.ram2Serial }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Disco y Unidad CD -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-hdd me-2"></i>
+                                Almacenamiento
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="discoMarca" class="form-label">Marca Disco</label>
+                                    <input type="text" class="form-control" id="discoMarca" name="discoMarca" value="{{ equipo.discoMarca }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="discoCapacidad" class="form-label">Capacidad Disco</label>
+                                    <input type="text" class="form-control" id="discoCapacidad" name="discoCapacidad" value="{{ equipo.discoCapacidad }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="discoSerial" class="form-label">Serial Disco</label>
+                                    <input type="text" class="form-control" id="discoSerial" name="discoSerial" value="{{ equipo.discoSerial }}">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="unidadCD" class="form-label">Unidad CD</label>
+                                    <input type="text" class="form-control" id="unidadCD" name="unidadCD" value="{{ equipo.unidadCD }}">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="unidadCDSerial" class="form-label">Serial Unidad CD</label>
+                                    <input type="text" class="form-control" id="unidadCDSerial" name="unidadCDSerial" value="{{ equipo.unidadCDSerial }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Periféricos -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-keyboard me-2"></i>
+                                Periféricos
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-3 mb-3">
+                                    <label for="monitorMarca" class="form-label">Marca Monitor</label>
+                                    <input type="text" class="form-control" id="monitorMarca" name="monitorMarca" value="{{ equipo.monitorMarca }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="monitorModelo" class="form-label">Modelo Monitor</label>
+                                    <input type="text" class="form-control" id="monitorModelo" name="monitorModelo" value="{{ equipo.monitorModelo }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="monitorSerial" class="form-label">Serial Monitor</label>
+                                    <input type="text" class="form-control" id="monitorSerial" name="monitorSerial" value="{{ equipo.monitorSerial }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="monitorPlaca" class="form-label">Placa Monitor</label>
+                                    <input type="text" class="form-control" id="monitorPlaca" name="monitorPlaca" value="{{ equipo.monitorPlaca }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="tecladoMarca" class="form-label">Marca Teclado</label>
+                                    <input type="text" class="form-control" id="tecladoMarca" name="tecladoMarca" value="{{ equipo.tecladoMarca }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="tecladoSerial" class="form-label">Serial Teclado</label>
+                                    <input type="text" class="form-control" id="tecladoSerial" name="tecladoSerial" value="{{ equipo.tecladoSerial }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="mouseMarca" class="form-label">Marca Mouse</label>
+                                    <input type="text" class="form-control" id="mouseMarca" name="mouseMarca" value="{{ equipo.mouseMarca }}">
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <label for="mouseSerial" class="form-label">Serial Mouse</label>
+                                    <input type="text" class="form-control" id="mouseSerial" name="mouseSerial" value="{{ equipo.mouseSerial }}">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Información Adicional -->
+                        <div class="col-md-12 mb-4">
+                            <h4 class="mb-3">
+                                <i class="fas fa-info-circle me-2"></i>
+                                Información Adicional
+                            </h4>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                    <label for="nombreUsuario" class="form-label">Nombre Usuario</label>
+                                    <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" value="{{ equipo.nombreUsuario }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="direccionMac" class="form-label">Dirección MAC</label>
+                                    <input type="text" class="form-control" id="direccionMac" name="direccionMac" value="{{ equipo.direccionMac }}">
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="VPN" class="form-label">VPN</label>
+                                    <input type="text" class="form-control" id="VPN" name="VPN" value="{{ equipo.VPN }}">
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="Observaciones" class="form-label">Observaciones</label>
+                                    <textarea class="form-control" id="Observaciones" name="Observaciones" rows="3">{{ equipo.Observaciones }}</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <a href="{{ url_for('index') }}" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-2"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save me-2"></i> Guardar Cambios
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+// Validación de formulario
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                form.classList.add('was-validated')
+            }, false)
+        })
+})()
+</script>
+{% endblock %} 

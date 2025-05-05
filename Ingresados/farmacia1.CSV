@@ -1,0 +1,2163 @@
+
+CLINICACALERA4
+
+"Nombre del computadora:","CLINICACALERA4"
+"Nombre de marca de computadora:","Hewlett-Packard HP ProDesk 405 G1 MT"
+"Sistema operativo:","Microsoft Windows 10 Professional (x64) Build 19045.4170 (22H2)"
+"Arranque UEFI:","Presente"
+"Arranque seguro:","Deshabilitado"
+"Integridad de código protegido por hipervisor (HVCI):","Deshabilitado"
+"Nombre de usuario actual:","Clinica Calera 3"
+
+Procesador(es) central
+
+"Número de paquetes de procesador (físicos):","1"
+"Número de núcleos de procesador:","4"
+"Número de procesadores lógicos:","4"
+
+AMD A4-5000
+
+"Nombre del procesador:","AMD A4-5000"
+"Frecuencia del procesador original:","1500.0 MHz"
+"Original Processor Frequency [MHz]:","1500"
+"CPU ID:","00700F01"
+"Extended CPUID:","00700F01"
+"Nombre de la marca de la CPU:","AMD A4-5000 APU with Radeon(TM) HD Graphics"
+"Proveedor de CPU:","AuthenticAMD"
+"Pasos de CPU:","KB-A1"
+"Nombre del código de la CPU:","Jaguar/Kabini"
+"Tecnología de CPU:","28 nm"
+"Plataforma CPU:","FT3 (BGA)"
+"Revisión de actualización de microcódigo:","7000110"
+"Número de núcleos de CPU:","4"
+"Número de CPU lógicas:","4"
+"Base de CPU:","1500.0 MHz = 15.00 x 100.0 MHz @ 1.1000 V"
+"CPU actual:","1497.1 MHz = 15.00 x 99.8 MHz @ 1.0125 V"
+"Tipo de bus de CPU:","UMI"
+"Caché L1:","Instruction: 4 x 32 KBytes, Data: 4 x 32 KBytes"
+"Caché L2:","Integrated: 4 x 2 MBytes"
+"Instruction TLB:","Fully associative, 32 entries"
+"Data TLB:","Fully associative, 40 entries"
+"FPU on Chip","Presente"
+"Enhanced Virtual-86 Mode","Presente"
+"I/O Breakpoints","Presente"
+"Page Size Extensions","Presente"
+"Time Stamp Counter","Presente"
+"Pentium-style Model Specific Registers","Presente"
+"Physical Address Extension","Presente"
+"Machine Check Exception","Presente"
+"CMPXCHG8B Instruction","Presente"
+"APIC On Chip / PGE (AMD)","Presente"
+"Fast System Call","Presente"
+"Memory Type Range Registers","Presente"
+"Page Global Feature","Presente"
+"Machine Check Architecture","Presente"
+"CMOV Instruction","Presente"
+"Page Attribute Table","Presente"
+"36-bit Page Size Extensions","Presente"
+"Processor Number","No presente"
+"CLFLUSH Instruction","Presente"
+"Debug Trace and EMON Store","No presente"
+"Internal ACPI Support","No presente"
+"MMX Technology","Presente"
+"Fast FP Save/Restore (IA MMX-2)","Presente"
+"Streaming SIMD Extensions","Presente"
+"Streaming SIMD Extensions 2","Presente"
+"Self-Snoop","No presente"
+"Multi-Threading Capable","Presente"
+"Automatic Clock Control","No presente"
+"IA-64 Processor","No presente"
+"Signal Break on FERR","No presente"
+"Streaming SIMD Extensions 3","Presente"
+"PCLMULQDQ Instruction Support","Presente"
+"MONITOR/MWAIT Support","Presente"
+"Supplemental Streaming SIMD Extensions 3","Presente"
+"FMA Extension","No presente"
+"CMPXCHG16B Support","Presente"
+"Streaming SIMD Extensions 4.1","Presente"
+"Streaming SIMD Extensions 4.2","Presente"
+"x2APIC","No presente"
+"POPCNT Instruction","Presente"
+"AES Cryptography Support","Presente"
+"XSAVE/XRSTOR/XSETBV/XGETBV Instructions","Presente"
+"XGETBV/XSETBV OS Enabled","Presente"
+"AVX Support","Presente"
+"Half-Precision Convert (CVT16)","Presente"
+"FPU on Chip","Presente"
+"Enhanced Virtual-86 Mode","Presente"
+"I/O Breakpoints","Presente"
+"Page Size Extensions","Presente"
+"Time Stamp Counter","Presente"
+"AMD-style Model Specific Registers","Presente"
+"Machine Check Exception","Presente"
+"CMPXCHG8B Instruction","Presente"
+"APIC On Chip","Presente"
+"SYSCALL and SYSRET Instructions","Presente"
+"Memory Type Range Registers","Presente"
+"Page Global Feature","Presente"
+"Machine Check Architecture","Presente"
+"CMOV Instruction","Presente"
+"Page Attribute Table","Presente"
+"36-bit Page Size Extensions","Presente"
+"Multi-Processing / Brand feature","No presente"
+"No Execute","Presente"
+"MMX Technology","Presente"
+"MMX+ Extensions","Presente"
+"Fast FP Save/Restore","Presente"
+"Fast FP Save/Restore Optimizations","Presente"
+"1 GB large page support","Presente"
+"RDTSCP Instruction","Presente"
+"x86-64 Long Mode","Presente"
+"3DNow! Technology Extensions","No presente"
+"3DNow! Technology","No presente"
+"Bit Manipulation Instructions Set 1","Presente"
+"Bit Manipulation Instructions Set 2","No presente"
+"Advanced Vector Extensions 2 (AVX2)","No presente"
+"Advanced Vector Extensions 512 (AVX-512) Foundation","No presente"
+"AVX-512 Prefetch Instructions","No presente"
+"AVX-512 Exponential and Reciprocal Instructions","No presente"
+"AVX-512 Conflict Detection Instructions","No presente"
+"AVX-512 Doubleword and Quadword Instructions","No presente"
+"AVX-512 Byte and Word Instructions","No presente"
+"AVX-512 Vector Length Extensions","No presente"
+"AVX-512 52-bit Integer FMA Instructions","No presente"
+"Secure Hash Algorithm (SHA) Extensions","No presente"
+"Software Guard Extensions (SGX) Support","No presente"
+"Supervisor Mode Execution Protection (SMEP)","No presente"
+"Supervisor Mode Access Prevention (SMAP)","No presente"
+"Hardware Lock Elision (HLE)","No presente"
+"Restricted Transactional Memory (RTM)","No presente"
+"Memory Protection Extensions (MPX)","No presente"
+"Read/Write FS/GS Base Instructions","No presente"
+"Enhanced Performance String Instruction","No presente"
+"INVPCID Instruction","No presente"
+"RDSEED Instruction","No presente"
+"Multi-precision Add Carry Instructions (ADX)","No presente"
+"PCOMMIT Instructions","No presente"
+"CLFLUSHOPT Instructions","No presente"
+"CLWB Instructions","No presente"
+"TSC_THREAD_OFFSET","No presente"
+"Platform Quality of Service Monitoring (PQM)","No presente"
+"Platform Quality of Service Enforcement (PQE)","No presente"
+"FPU Data Pointer updated only on x87 Exceptions","No presente"
+"Deprecated FPU CS and FPU DS","No presente"
+"Intel Processor Trace","No presente"
+"PREFETCHWT1 Instruction","No presente"
+"AVX-512 Vector Bit Manipulation Instructions","No presente"
+"AVX-512 Vector Bit Manipulation Instructions 2","No presente"
+"AVX-512 Galois Fields New Instructions","No presente"
+"AVX-512 Vector AES","No presente"
+"AVX-512 Vector Neural Network Instructions","No presente"
+"AVX-512 Bit Algorithms","No presente"
+"AVX-512 Carry-Less Multiplication Quadword (VPCLMULQDQ)","No presente"
+"AVX-512 Vector POPCNT (VPOPCNTD/VPOPCNTQ)","No presente"
+"User-Mode Instruction Prevention","No presente"
+"Protection Keys for User-mode Pages","No presente"
+"OS Enabled Protection Keys","No presente"
+"Wait and Pause Enhancements (WAITPKG)","No presente"
+"Total Memory Encryption","No presente"
+"Key Locker","No presente"
+"57-bit Linear Addresses, 5-level Paging","No presente"
+"Read Processor ID","No presente"
+"OS Bus-Lock Detection","No presente"
+"Cache Line Demote","No presente"
+"MOVDIRI: Direct Stores","No presente"
+"MOVDIR64B: Direct Stores","No presente"
+"ENQCMD: Enqueue Stores","No presente"
+"SGX Launch Configuration","No presente"
+"Protection Keys for Supervisor-Mode Pages","No presente"
+"Control-Flow Enforcement Technology (CET) Shadow Stack","No presente"
+"Attestation Services for Intel SGX","No presente"
+"AVX-512 4 x Vector Neural Network Instructions Word Variable Precision","No presente"
+"AVX-512 4 x Fused Multiply Accumulation Packed Single Precision","No presente"
+"Fast Short REP MOV","No presente"
+"User Interrupts","No presente"
+"AVX-512 VP2INTERSECT Support","No presente"
+"AVX-512 FP16","No presente"
+"MD_CLEAR Support","No presente"
+"IA32_MCU_OPT_CTRL MSR Support","No presente"
+"Restricted Transactional Memory (RTM) Always Abort","No presente"
+"Restricted Transactional Memory (RTM) Force Abort","No presente"
+"SERIALIZE","No presente"
+"Hybrid Processor","No presente"
+"TSX Suspend Load Address Tracking","No presente"
+"Platform Configuration (PCONFIG)","No presente"
+"Architectural LBRs","No presente"
+"Indirect Branch Restricted Speculation (IBRS), Indirect Branch Predictor Barrier (IBPB)","No presente"
+"Single Thread Indirect Branch Predictors (STIBP)","No presente"
+"L1D_FLUSH Support","No presente"
+"IA32_ARCH_CAPABILITIES MSR","No presente"
+"IA32_CORE_CAPABILITIES MSR","No presente"
+"Speculative Store Bypass Disable (SSBD)","No presente"
+"Control-Flow Enforcement Technology (CET) Indirect Branch Tracking","No presente"
+"Advanced Matrix Extensions (AMX) Tile Architecture","No presente"
+"Advanced Matrix Extensions (AMX) bfloat16 Support","No presente"
+"Advanced Matrix Extensions (AMX) 8-bit Integer Operations","No presente"
+"SHA512 Instructions","No presente"
+"SM3 Instructions","No presente"
+"SM4 Instructions","No presente"
+"Advanced Matrix Extensions (AMX) FP16 Instructions","No presente"
+"AVX (VEX-encoded) Vector Neural Network Instructions","No presente"
+"AVX-512 BFLOAT16 Instructions","No presente"
+"Fast Zero-Length MOVSB","No presente"
+"Fast Short STOSB","No presente"
+"Fast Short CMPSB, SCASB","No presente"
+"History Reset","No presente"
+"Linear Address Masking","No presente"
+"Linear Address Space Separation","No presente"
+"RAO-INT Instructions","No presente"
+"CMPccXADD Instructions","No presente"
+"Flexible Return and Event Delivery (FRED)","No presente"
+"LKGS Instruction","No presente"
+"WRMSRNS Instruction","No presente"
+"NMI-source Reporting","No presente"
+"AVX-IFMA Instructions","No presente"
+"RD/WR MSRLIST Instructions","No presente"
+"INVD Execution Prevention After BIOS-Done","No presente"
+"Protected Processor Inventory Number (IA32_PPIN) Support","No presente"
+"PBNDKB Instruction","No presente"
+"AVX-VNNI-INT8 Instructions","No presente"
+"AVX-VNNI-INT16 Instructions","No presente"
+"AVX-NE-CONVERT Instructions","No presente"
+"PREFETCHIT0/1 Instructions","No presente"
+"URDMSR/UWRMSR Instructions","No presente"
+"AMX-COMPLEX Instructions","No presente"
+"CET Supervisor Shadow-Stack","No presente"
+"UIRET Support","No presente"
+"Advanced Vector Extensions 10 (AVX10)","No presente"
+"Advanced Performance Extensions (APX) Foundation","No presente"
+"Not Exhibiting MXCSR Configuration Dependent Timing (MCDT)","No presente"
+"UC-Lock Disable Feature","No presente"
+"LAHF/SAHF Long Mode Support","Presente"
+"Core Multi-Processing Legacy Mode","Presente"
+"Secure Virtual Machine","Presente"
+"Extended APIC Register Space","Presente"
+"LOCK MOV CR0 Support","Presente"
+"Advanced Bit Manipulation","Presente"
+"SSE4A Support","Presente"
+"Misaligned SSE Mode","Presente"
+"PREFETCH(W) Support","Presente"
+"OS Visible Work-around Support","Presente"
+"Instruction Based Sampling","Presente"
+"XOP Instruction Support","No presente"
+"SKINIT, STGI, and DEV Support","Presente"
+"Watchdog Timer Support","Presente"
+"TBM0 Instruction Support","No presente"
+"Lightweight Profiling Support","No presente"
+"FMA4 Instruction Support","No presente"
+"Translation Cache Extension","No presente"
+"NodeId Support","No presente"
+"Trailing Bit Manipulation","No presente"
+"Topology Extensions","Presente"
+"Core Performance Counter Extensions","No presente"
+"NB Performance Counter Extensions","Presente"
+"Streaming Performance Monitor Architecture","No presente"
+"Data Breakpoint Extension","Presente"
+"Performance Time-Stamp Counter","No presente"
+"L2I Performance Counter Extensions","Presente"
+"MWAITX/MONITORX Support","No presente"
+"Cifrado de memoria seguro (SME)","No presente"
+"Virtualización cifrada segura (SEV)","No presente"
+"Core Performance Boost","No soportado"
+"Tamaño máximo de dirección física:","40-bit (1 TBytes)"
+"Tamaño máximo de dirección virtual:","48-bit (256 TBytes)"
+"Range 0-80000000 (0MB-2048MB) Type:","Write Back (WB)"
+"Range 80000000-A0000000 (2048MB-2560MB) Type:","Write Back (WB)"
+"Range 9F000000-A0000000 (2544MB-2560MB) Type:","Uncacheable (UC)"
+
+Tarjeta madre
+
+"Nombre de marca de computadora:","Hewlett-Packard HP ProDesk 405 G1 MT"
+"Modelo de placa base:","Hewlett-Packard 2171"
+"Chipset de la placa base:","AMD Yangtze"
+"Ranuras para placa base:","3xPCI Express x1, 1xPCI Express x16"
+"Versión de PCI Express admitida:","v2.0"
+"Versión USB admitida:","v3.0"
+"Fabricante de BIOS:","American Megatrends"
+"Fecha de BIOS (mm/dd/yyyy):","12/25/2013"
+"Versión de BIOS:","80.04"
+"Versión AMD AGESA:","KabiniPI        V1.0.0.8    "
+"UEFI BIOS:","Capaz"
+"Chip Super-IO / LPC:","Nuvoton NPCD379HAKFX"
+"Chip del módulo de plataforma segura (TPM):","Not Found"
+
+Dispositivos ACPI
+
+
+Programmable interrupt controller
+
+"Nombre del dispositivo:","Programmable interrupt controller"
+"I/O Port:","0020 - 0021"
+"IRQ:","65792"
+"I/O Port:","0020 - 0021"
+"I/O Port:","00A0 - 00A1"
+
+System timer
+
+"Nombre del dispositivo:","System timer"
+"I/O Port:","0040 - 0043"
+"I/O Port:","0040 - 0043"
+"IRQ:","0"
+
+High precision event timer
+
+"Nombre del dispositivo:","High precision event timer"
+"Ubicación de la memoria:","FED00000 - FED003FF"
+"Ubicación de la memoria:","FED00000 - FED003FF"
+
+Direct memory access controller
+
+"Nombre del dispositivo:","Direct memory access controller"
+"I/O Port:","0089 - 008B"
+"DMA:","4"
+"I/O Port:","0000 - 000F"
+"I/O Port:","0081 - 0083"
+"I/O Port:","0087"
+"I/O Port:","0089 - 008B"
+"I/O Port:","008F"
+"I/O Port:","00C0 - 00DF"
+"DMA:","4"
+
+Puerto de comunicaciones
+
+"Nombre del dispositivo:","Puerto de comunicaciones"
+"I/O Port:","03F8 - 03FF"
+"I/O Port:","03F8 - 03FF"
+"IRQ:","4"
+"I/O Port:","03F8 - 03FF"
+"IRQ:","3"
+"I/O Port:","02F8 - 02FF"
+"IRQ:","4"
+"I/O Port:","02F8 - 02FF"
+"IRQ:","3"
+"I/O Port:","03E8 - 03EF"
+"IRQ:","4"
+"I/O Port:","03E8 - 03EF"
+"IRQ:","3"
+"I/O Port:","02E8 - 02EF"
+"IRQ:","4"
+"I/O Port:","02E8 - 02EF"
+"IRQ:","3"
+"I/O Port:","03F8 - 03FF"
+"IRQ:","10"
+"I/O Port:","03F8 - 03FF"
+"IRQ:","5"
+"I/O Port:","02F8 - 02FF"
+"IRQ:","10"
+"I/O Port:","02F8 - 02FF"
+"IRQ:","5"
+"I/O Port:","03E8 - 03EF"
+"IRQ:","10"
+"I/O Port:","03E8 - 03EF"
+"IRQ:","5"
+"I/O Port:","02E8 - 02EF"
+"IRQ:","10"
+"I/O Port:","02E8 - 02EF"
+"IRQ:","5"
+
+System speaker
+
+"Nombre del dispositivo:","System speaker"
+"I/O Port:","0061"
+"I/O Port:","0061"
+
+PCI Express Root Complex
+
+"Nombre del dispositivo:","PCI Express Root Complex"
+"I/O Port:","0000 - FFFFFFFF"
+"I/O Port:","03B0 - 03DF"
+"Ubicación de la memoria:","000A0000 - 0009FFFF"
+"I/O Port:","0000 - 03AF"
+"I/O Port:","03E0 - 0CF7"
+"I/O Port:","03B0 - 03DF"
+"I/O Port:","0D00 - FFFF"
+"Ubicación de la memoria:","000A0000 - 000BFFFF"
+"Ubicación de la memoria:","000C0000 - 000DFFFF"
+"Ubicación de la memoria:","C0000000 - FFFFFFFF"
+
+System CMOS/real time clock
+
+"Nombre del dispositivo:","System CMOS/real time clock"
+"I/O Port:","0070 - 0071"
+"I/O Port:","0070 - 0071"
+"IRQ:","8"
+
+System board
+
+"Nombre del dispositivo:","System board"
+"Ubicación de la memoria:","E0000000 - EFFFFFFF"
+"Ubicación de la memoria:","E0000000 - EFFFFFFF"
+
+Motherboard resources
+
+"Nombre del dispositivo:","Motherboard resources"
+"I/O Port:","0010 - 001F"
+"I/O Port:","0080"
+"I/O Port:","0090 - 009F"
+"Ubicación de la memoria:","00000000 - 00000087"
+"I/O Port:","0010 - 001F"
+"I/O Port:","0022 - 003F"
+"I/O Port:","0044 - 005F"
+"I/O Port:","0072 - 007F"
+"I/O Port:","0080"
+"I/O Port:","0084 - 0086"
+"I/O Port:","0088"
+"I/O Port:","008C - 008E"
+"I/O Port:","0090 - 009F"
+"I/O Port:","00A2 - 00BF"
+"I/O Port:","00E0 - 00EF"
+"I/O Port:","04D0 - 04D1"
+
+Motherboard resources
+
+"Nombre del dispositivo:","Motherboard resources"
+"I/O Port:","0600 - 061F"
+"I/O Port:","0600 - 061F"
+"I/O Port:","0680 - 069F"
+"I/O Port:","0650 - 065F"
+
+Motherboard resources
+
+"Nombre del dispositivo:","Motherboard resources"
+"Ubicación de la memoria:","A0000000 - BFFFFFFF"
+"Ubicación de la memoria:","A0000000 - BFFFFFFF"
+
+Motherboard resources
+
+"Nombre del dispositivo:","Motherboard resources"
+"I/O Port:","0010 - 001F"
+"I/O Port:","0067 - 006F"
+"I/O Port:","0088"
+"I/O Port:","00B1"
+"I/O Port:","04D6"
+"I/O Port:","0C52"
+"I/O Port:","0000 - 0C6E"
+"I/O Port:","0CD2 - 0CD3"
+"I/O Port:","0800 - 089F"
+"I/O Port:","0910 - 091F"
+"Ubicación de la memoria:","00000000 - 0000008F"
+"IRQ:","1114369"
+"IRQ:","1114369"
+"I/O Port:","0010 - 001F"
+"I/O Port:","0022 - 003F"
+"I/O Port:","0063"
+"I/O Port:","0065"
+"I/O Port:","0067 - 006F"
+"I/O Port:","0072 - 007F"
+"I/O Port:","0080"
+"I/O Port:","0084 - 0086"
+"I/O Port:","0088"
+"I/O Port:","008C - 008E"
+"I/O Port:","0090 - 009F"
+"I/O Port:","00A2 - 00BF"
+"I/O Port:","00B1"
+"I/O Port:","00E0 - 00EF"
+"I/O Port:","04D0 - 04D1"
+"I/O Port:","040B"
+"I/O Port:","04D6"
+"I/O Port:","0C00 - 0C01"
+"I/O Port:","0C14"
+"I/O Port:","0C50 - 0C51"
+"I/O Port:","0C52"
+"I/O Port:","0C6C"
+"I/O Port:","0C6F"
+"I/O Port:","0CD0 - 0CD1"
+"I/O Port:","0CD2 - 0CD3"
+"I/O Port:","0CD4 - 0CD5"
+"I/O Port:","0CD6 - 0CD7"
+"I/O Port:","0CD8 - 0CDF"
+"I/O Port:","0800 - 089F"
+"I/O Port:","0000 - 000F"
+"I/O Port:","0B20 - 0B3F"
+"I/O Port:","0900 - 090F"
+"I/O Port:","0910 - 091F"
+"I/O Port:","FE00 - FEFE"
+"Ubicación de la memoria:","FEC00000 - FEC00FFF"
+"Ubicación de la memoria:","FEE00000 - FEE00FFF"
+"Ubicación de la memoria:","FED80000"
+"Ubicación de la memoria:","FED61000"
+"Ubicación de la memoria:","FEC10000 - FEC10FFF"
+"Ubicación de la memoria:","FED00000 - FED00FFF"
+"Ubicación de la memoria:","FF000000"
+
+Numeric data processor
+
+"Nombre del dispositivo:","Numeric data processor"
+"I/O Port:","00F0 - 00FF"
+"I/O Port:","00F0 - 00FF"
+"IRQ:","13"
+
+SMBIOS DMI
+
+
+BIOS
+
+"Fabricante de BIOS:","AMI"
+"Versión de BIOS:","80.04"
+"Fecha de lanzamiento del BIOS (mm/dd/yyyy):","12/25/2013"
+"Segmento de inicio de BIOS:","F000"
+"Tamaño de la BIOS:","1024 KBytes"
+"Versión del BIOS del sistema:","4.6"
+"ISA Support:","No presente"
+"MCA Support:","No presente"
+"EISA Support:","No presente"
+"PCI Support:","Presente"
+"PC Card (PCMCIA) Support:","No presente"
+"Plug-and-Play Support:","Presente"
+"APM Support:","No presente"
+"Flash BIOS:","Presente"
+"BIOS Shadow:","Presente"
+"VL-VESA Support:","No presente"
+"ESCD Support:","No presente"
+"Boot from CD:","Presente"
+"Selectable Boot:","Presente"
+"BIOS ROM Socketed:","No presente"
+"Boot from PC Card:","No presente"
+"EDD Support:","Presente"
+"NEC PC-98 Support:","No presente"
+"ACPI Support:","Presente"
+"USB Legacy Support:","Presente"
+"AGP Support:","No presente"
+"I2O Boot Support:","No presente"
+"LS-120 Boot Support:","No presente"
+"ATAPI ZIP Drive Boot Support:","No presente"
+"IEE1394 Boot Support:","No presente"
+"Smart Battery Support:","No presente"
+"BIOS Boot Specification Support:","Presente"
+"Function key-initiated Network Service Boot Support:","Presente"
+"Targeted Content Distribution Support:","Presente"
+"UEFI Specification Support:","Presente"
+"Virtual Machine:","No presente"
+
+Sistema
+
+"Fabricante del sistema:","Hewlett-Packard"
+"Nombre del producto:","HP ProDesk 405 G1 MT"
+"Version del producto:",""
+"Número de serie del producto:","MXL4250JFM"
+"UUID:","{D8F17A85-FE82-7219-ED99-B96D957DF528}"
+"SKU Number:","E2G58AV#010"
+"Family:","103C_53307F G=D"
+
+tarjeta madre
+
+"Fabricante de la placa base:","Hewlett-Packard"
+"Nombre de la placa base:","2171"
+"Versión de la placa base:","NULL"
+"Número de serie de la placa base:","MXL4250JFM"
+"Asset Tag:","MXL4250JFM"
+"Ubicación en el chasis de la:"," "
+
+Caja del sistema
+
+"Fabricante:","Hewlett-Packard"
+"Tipo de caja:","Desktop"
+"Versión:"," "
+"Número de serie:","MXL4250JFM"
+"Asset Tag Number:","MXL4250JFM"
+
+Cadenas de texto OEM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Opciones de configuración del sistema
+
+
+
+Hardware Security
+
+"Power-on Password:","Deshabilitado"
+"Keyboard Password:","Not implemented"
+"Administrator Password:","Deshabilitado"
+"Front Panel Reset:","Not implemented"
+
+Información de arranque del sistema
+
+"Estado de arranque:","No ocurrió ningún error"
+
+Dispositivo de gestión
+
+"Descripción del aparato:","LM78-1"
+"Tipo de dispositivo:","National Semiconductor LM78"
+"Device Address:","I/O: 0"
+
+Sonda de voltaje
+
+"Descripción:","LM78A"
+"Location:","Desconocido"
+"Status:","Desconocido"
+"Maximum Value:","Unknown"
+"Minimum Value:","Unknown"
+"Resolution:","Unknown"
+"Tolerance:","Unknown"
+"Accuracy:","Unknown"
+
+Management Device Threshold Data
+
+
+Componente de dispositivo de gestión
+
+
+Probeta de temperatura
+
+"Descripción:","LM78A"
+"Location:","Unknown"
+"Status:","Unknown"
+"Maximum Value:","Unknown"
+"Minimum Value:","Unknown"
+"Nominal Value:","Unknown"
+"Resolution:","Unknown"
+"Tolerance:","Unknown"
+"Accuracy:","Unknown"
+
+Management Device Threshold Data
+
+
+Componente de dispositivo de gestión
+
+
+Dispositivo de enfriamiento
+
+"Escribe:","Chip Fan"
+"Descripción:","CPU Fan"
+"Status:","OK"
+
+Management Device Threshold Data
+
+
+Componente de dispositivo de gestión
+
+
+Dispositivo de enfriamiento
+
+"Escribe:","Cabinet Fan"
+"Descripción:","SYSTEM Fan"
+"Status:","OK"
+
+Management Device Threshold Data
+
+
+Componente de dispositivo de gestión
+
+
+Sonda de corriente eléctrica
+
+"Descripción:","ABC"
+"Location:","Desconocido"
+"Status:","Desconocido"
+"Maximum Value:","Unknown"
+"Minimum Value:","Unknown"
+"Resolution:","Unknown"
+"Tolerance:","Unknown"
+"Accuracy:","Unknown"
+
+Management Device Threshold Data
+
+
+Componente de dispositivo de gestión
+
+
+Fuente de alimentación del sistema
+
+"Location:"," "
+"Nombre del dispositivo:"," "
+"Fabricante:"," "
+"Número de serie:"," "
+"Asset Tag Number:"," "
+"Model Part Number:","Standard Efficiency"
+"Revision Level:"," "
+"Power Supply Status:","Presente"
+"Power Supply Type:","Switching"
+"Estado de energía:","OK"
+"Hot replaceable:","No"
+"Unplugged from wall:","No"
+
+Dispositivo a bordo
+
+"Descripción del aparato:"," Onboard IGD"
+"Tipo de dispositivo:","Video Adapter"
+"Estado del dispositivo:","Activado"
+
+Dispositivo a bordo
+
+"Descripción del aparato:"," Onboard LAN"
+"Tipo de dispositivo:","Ethernet Adapter"
+"Estado del dispositivo:","Activado"
+
+Dispositivo a bordo
+
+"Descripción del aparato:"," Onboard Audio"
+"Tipo de dispositivo:","Unknown"
+"Estado del dispositivo:","Activado"
+
+L1 CACHE
+
+"Designación de enchufe:","L1 CACHE"
+"Estado de caché:","Activado"
+"Ubicación de la caché:","Interno"
+"Tipo de caché:","L1 Unified"
+"Esquema de caché:","Write-Back"
+"Tipo de SRAM admitido:","Pipeline Burst"
+"Tipo de SRAM actual:","Pipeline Burst"
+"Velocidad de caché:","1 ns"
+"Tipo de corrección de errores:","Multi-bit ECC"
+"Tamaño máximo de caché:","256 KBytes"
+"Tamaño de caché instalado:","256 KBytes"
+"Asociatividad de caché:","2-way Set-Associative"
+
+L2 CACHE
+
+"Designación de enchufe:","L2 CACHE"
+"Estado de caché:","Activado"
+"Ubicación de la caché:","Interno"
+"Tipo de caché:","L2 Unified"
+"Esquema de caché:","Write-Back"
+"Tipo de SRAM admitido:","Pipeline Burst"
+"Tipo de SRAM actual:","Pipeline Burst"
+"Velocidad de caché:","1 ns"
+"Tipo de corrección de errores:","Multi-bit ECC"
+"Tamaño máximo de caché:","2048 KBytes"
+"Tamaño de caché instalado:","2048 KBytes"
+"Asociatividad de caché:","16-way Set-Associative"
+
+Procesador
+
+"Fabricante del procesador:","AuthenticAMD"
+"Processor Version:","AMD A4-5000 APU with Radeon(TM) HD Graphics    "
+"Frecuencia externa:","100 MHz"
+"Frecuencia máxima admitida:","1500 MHz"
+"Frecuencia actual:","1500 MHz"
+"Zócalo de CPU:","Poblada"
+"Estado de la CPU:","Activado"
+"Tipo de procesador:","Procesador central"
+"Voltaje del procesador:","1.0 V"
+"Actualización del procesador:","None"
+"Designación de enchufe:","P0"
+
+Idioma del BIOS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dispositivos de memoria
+
+
+Matriz de memoria física
+
+"Ubicación de la matriz:","System board"
+"Uso de matriz:","System memory"
+"Método de detección de errores:","Ninguna"
+"Capacidad de memoria:","8 GBytes"
+"Dispositivos de memoria:","2"
+
+Memory Array Mapped Address
+
+"Dirección inicial:","00000000"
+"Dirección final:","007FFFFF"
+"Ancho de partición:","255"
+
+Dispositivo de memoria
+
+"Ancho total:","64 bits"
+"Ancho de datos:","64 bits"
+"Tamaño del dispositivo:","4096 MBytes"
+"Factor de forma del dispositivo:","DIMM"
+"Localizador de dispositivos:","DIMM 2"
+"Bank Locator:","BANK 0  "
+"Tipo de dispositivo:","DDR3 SDRAM"
+"Detalle del tipo de dispositivo:","Synchronous"
+"Velocidad de memoria:","1600 MHz"
+"Fabricante:","Elpida         "
+"Número de serie:","86C71EAF"
+"Número de parte:","EBJ40UG8EFW0-GN-F "
+"Asset Tag:","A1_AssetTagNum0"
+
+Dispositivo de memoria
+
+"Ancho total:","64 bits"
+"Ancho de datos:","64 bits"
+"Tamaño del dispositivo:","4096 MBytes"
+"Factor de forma del dispositivo:","DIMM"
+"Localizador de dispositivos:","DIMM 1"
+"Bank Locator:","BANK 1  "
+"Tipo de dispositivo:","DDR3 SDRAM"
+"Detalle del tipo de dispositivo:","Synchronous"
+"Velocidad de memoria:","1600 MHz"
+"Fabricante:",""
+"Número de serie:","00000000"
+"Número de parte:","PSD34G16002"
+"Asset Tag:","A1_AssetTagNum1"
+
+Memory Device Mapped Address
+
+"Dirección inicial:","00000000"
+"Dirección final:","003FFFFF"
+"Partition Row Position:","Desconocido"
+"Interleave Position:","Desconocido"
+"Interleave Data Depth:","Desconocido"
+
+Memory Device Mapped Address
+
+"Dirección inicial:","00400000"
+"Dirección final:","007FFFFF"
+"Partition Row Position:","Desconocido"
+"Interleave Position:","Desconocido"
+"Interleave Data Depth:","Desconocido"
+
+Conectores de puerto
+
+
+Mouse Port
+
+"Tipo de puerto:","Mouse Port"
+"Referencia interna:","J1A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","PS2Mouse"
+"Tipo de conector externo:","PS/2"
+
+Keyboard Port
+
+"Tipo de puerto:","Keyboard Port"
+"Referencia interna:","J1A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","Keyboard"
+"Tipo de conector externo:","PS/2"
+
+Network Port
+
+"Tipo de puerto:","Network Port"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","LAN"
+"Tipo de conector externo:","RJ-45"
+
+Serial Port 16550A Compatible
+
+"Tipo de puerto:","Serial Port 16550A Compatible"
+"Referencia interna:","J2A2A"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","COM A"
+"Tipo de conector externo:","DB-9 pin male"
+
+Serial Port 16550A Compatible
+
+"Tipo de puerto:","Serial Port 16550A Compatible"
+"Referencia interna:","J2A2A"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","LPT"
+"Tipo de conector externo:","DB-9 pin male"
+
+Video Port
+
+"Tipo de puerto:","Video Port"
+"Referencia interna:","J2A2B"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","Video"
+"Tipo de conector externo:","DB-15 pin female"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J3A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB0"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J3A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB1"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J3A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB2"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J3A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB3"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB4"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB5"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB6"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB7"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB8"
+"Tipo de conector externo:","Access Bus (USB)"
+
+USB
+
+"Tipo de puerto:","USB"
+"Referencia interna:","J5A1"
+"Tipo de conector interno:","Ninguna"
+"Referencia externa:","USB9"
+"Tipo de conector externo:","Access Bus (USB)"
+
+Ranuras del sistema
+
+
+PCIE x16
+
+"Designación de la ranura:","PCIE x16"
+"Tipo de ranura:","PCI Express"
+"Uso de la ranura:","Vacío"
+"Ancho del bus de datos de la ranura:","16x / x16"
+"Longitud de la ranura:","Largo"
+"Base Bus:Device:Function Number:","-:1:0"
+
+PCIE x1
+
+"Designación de la ranura:","PCIE x1"
+"Tipo de ranura:","PCI Express"
+"Uso de la ranura:","Vacío"
+"Ancho del bus de datos de la ranura:","1x / x1"
+"Longitud de la ranura:","Corto"
+"Base Bus:Device:Function Number:","-:28:3"
+
+PCIE x1
+
+"Designación de la ranura:","PCIE x1"
+"Tipo de ranura:","PCI Express"
+"Uso de la ranura:","Vacío"
+"Ancho del bus de datos de la ranura:","1x / x1"
+"Longitud de la ranura:","Corto"
+"Base Bus:Device:Function Number:","-:28:4"
+
+PCIE x1
+
+"Designación de la ranura:","PCIE x1"
+"Tipo de ranura:","PCI Express"
+"Uso de la ranura:","Vacío"
+"Ancho del bus de datos de la ranura:","1x / x1"
+"Longitud de la ranura:","Corto"
+"Base Bus:Device:Function Number:","-:28:5"
+
+Memoria
+
+"Tamaño de memoria total:","8 GBytes"
+"Total Memory Size [MB]:","8192"
+"Frecuencia de memoria máxima admitida:","800.0 MHz (4 : 1 Relación)"
+"Frecuencia de memoria actual:","665.4 MHz"
+"Sincronización actual (tCAS-tRCD-tRP-tRAS):","9-9-10-24"
+"Canales de memoria compatibles:","1"
+"Canales de memoria activos:","1"
+"Read to Read Delay (tRDRD_SG/TrdrdScL) Same Bank Group:","1T"
+"Read to Read Delay (tRDRD_DG/TrdrdScDlr) Different Bank Group:","4T"
+"Read to Read Delay (tRDRD_DD) Different DIMM:","4T"
+"Write to Write Delay (tWRWR_SG/TwrwrScL) Same Bank Group:","1T"
+"Write to Write Delay (tWRWR_DG/TwrwrScDlr) Different Bank Group:","4T"
+"Write to Write Delay (tWRWR_DD) Different DIMM:","4T"
+"Write to Read Delay (tWRRD_SG/TwrrdScL) Same Bank Group:","5T"
+"Read to Precharge Delay (tRTP):","5T"
+"Write to Precharge Delay (tWTP):","21T"
+"Write Recovery Time (tWR):","10T"
+"RAS# to RAS# Delay (tRRD):","4T"
+"Row Cycle Time (tRC):","33T"
+"Four Activate Window (tFAW):","27T"
+
+Hilera: 0 [BANK 0/DIMM 2] - 4 GB PC3-12800 DDR3 SDRAM Elpida EBJ40UG8EFW0-GN-F
+
+"Número de módulo:","0"
+"Tamaño del módulo:","4 GBytes"
+"Tipo de memoria:","DDR3 SDRAM"
+"Tipo de módulo:","Unbuffered DIMM (UDIMM)"
+"Velocidad de memoria:","800.0 MHz (DDR3-1600 / PC3-12800)"
+"Fabricante del módulo:","Elpida"
+"Número de pieza del módulo:","EBJ40UG8EFW0-GN-F"
+"Revisión del módulo:","8240"
+"Número de serie del módulo:","2938029958 (86C71EAF)"
+"Fecha de fabricación del módulo:","Año: 2013, Semana: 16"
+"Ubicación de fabricación del módulo:","76"
+"Fabricante de SDRAM:","Elpida"
+"Verificación / corrección de errores:","Ninguna"
+"Bits de dirección de fila:","16"
+"Bits de dirección de columna:","10"
+"Number Of Banks:","8"
+"Densidad del módulo:","4096 Mb"
+"Número de rangos:","1"
+"Ancho del dispositivo:","8 bits"
+"Bus Width:","64 bits"
+"Voltaje nominal del módulo (VDD):","1.5 V, 1.35 V"
+"Minimum SDRAM Cycle Time (tCKmin):","1.250 ns"
+"Latencias de CAS # admitidas:","6, 7, 8, 9, 10, 11"
+"Tiempo de latencia mínimo CAS # (tAAmin):","13.125 ns"
+"Mínimo RAS # a CAS # Retardo (tRCDmin):","13.125 ns"
+"Minimum Row Precharge Time (tRPmin):","13.125 ns"
+"Minimum Active to Precharge Time (tRASmin):","35.000 ns"
+"Temporización del módulo admitido a 800.0 MHz:","11-11-11-28"
+"Temporización del módulo admitido a 666.7 MHz:","9-9-9-24"
+"Temporización del módulo admitido a 533.3 MHz:","7-7-7-19"
+"Temporización del módulo admitido a 400.0 MHz:","6-6-6-14"
+"Minimum Write Recovery Time (tWRmin):","15.000 ns"
+"Minimum Row Active to Row Active Delay (tRRDmin):","6.000 ns"
+"Minimum Active to Active/Refresh Time (tRCmin):","48.125 ns"
+"Minimum Refresh Recovery Time Delay (tRFCmin):","260.000 ns"
+"Minimum Internal Write to Read Command Delay (tWTRmin):","7.500 ns"
+"Minimum Internal Read to Precharge Command Delay (tRTPmin):","7.500 ns"
+"Minimum Four Activate Window Delay Time (tFAWmin):","30.000 ns"
+"Partial Array Self Refresh (PASR):","Soportado"
+"On-die Thermal Sensor (ODTS) Readout:","No soportado"
+"Auto Self Refresh (ASR):","No soportado"
+"Extended Temperature 1X Refresh Rate:","No soportado"
+"Extended Temperature Range:","Soportado"
+"Module Temperature Sensor:","No soportado"
+"Pseudo Target Row Refresh (pTRR):","No soportado"
+"Altura nominal del módulo:","29 - 30 mm"
+"Espesor máximo del módulo (frontal):","1 - 2 mm"
+"Espesor máximo del módulo (trasero):","<= 1 mm"
+
+Hilera: 1 [BANK 1/DIMM 1] - 4 GB PC3-12800 DDR3 SDRAM Patriot Memory (PDP Systems) PSD34G16002
+
+"Número de módulo:","1"
+"Tamaño del módulo:","4 GBytes"
+"Tipo de memoria:","DDR3 SDRAM"
+"Tipo de módulo:","Unbuffered DIMM (UDIMM)"
+"Velocidad de memoria:","800.0 MHz (DDR3-1600 / PC3-12800)"
+"Fabricante del módulo:","Patriot Memory (PDP Systems)"
+"Número de pieza del módulo:","PSD34G16002"
+"Revisión del módulo:","0"
+"Número de serie del módulo:","N/A"
+"Fecha de fabricación del módulo:","Año: 2000, Semana: 0"
+"Ubicación de fabricación del módulo:","2"
+"Fabricante de SDRAM:","Desconocido"
+"Verificación / corrección de errores:","Ninguna"
+"Bits de dirección de fila:","15"
+"Bits de dirección de columna:","10"
+"Number Of Banks:","8"
+"Densidad del módulo:","2048 Mb"
+"Número de rangos:","2"
+"Ancho del dispositivo:","8 bits"
+"Bus Width:","64 bits"
+"Voltaje nominal del módulo (VDD):","1.5 V"
+"Minimum SDRAM Cycle Time (tCKmin):","1.250 ns"
+"Latencias de CAS # admitidas:","5, 6, 7, 8, 9, 10, 11"
+"Tiempo de latencia mínimo CAS # (tAAmin):","13.125 ns"
+"Mínimo RAS # a CAS # Retardo (tRCDmin):","13.125 ns"
+"Minimum Row Precharge Time (tRPmin):","13.125 ns"
+"Minimum Active to Precharge Time (tRASmin):","35.000 ns"
+"Temporización del módulo admitido a 800.0 MHz:","11-11-11-28"
+"Temporización del módulo admitido a 666.7 MHz:","9-9-9-24"
+"Temporización del módulo admitido a 533.3 MHz:","7-7-7-19"
+"Temporización del módulo admitido a 400.0 MHz:","6-6-6-14"
+"Temporización del módulo admitido a 333.3 MHz:","5-5-5-12"
+"Minimum Write Recovery Time (tWRmin):","15.000 ns"
+"Minimum Row Active to Row Active Delay (tRRDmin):","6.000 ns"
+"Minimum Active to Active/Refresh Time (tRCmin):","49.125 ns"
+"Minimum Refresh Recovery Time Delay (tRFCmin):","300.000 ns"
+"Minimum Internal Write to Read Command Delay (tWTRmin):","7.500 ns"
+"Minimum Internal Read to Precharge Command Delay (tRTPmin):","7.500 ns"
+"Minimum Four Activate Window Delay Time (tFAWmin):","40.000 ns"
+"Partial Array Self Refresh (PASR):","No soportado"
+"On-die Thermal Sensor (ODTS) Readout:","No soportado"
+"Auto Self Refresh (ASR):","Soportado"
+"Extended Temperature 1X Refresh Rate:","No soportado"
+"Extended Temperature Range:","Soportado"
+"Module Temperature Sensor:","No soportado"
+"Pseudo Target Row Refresh (pTRR):","No soportado"
+"Altura nominal del módulo:","29 - 30 mm"
+"Espesor máximo del módulo (frontal):","1 - 2 mm"
+"Espesor máximo del módulo (trasero):","1 - 2 mm"
+
+Bus
+
+
+PCI Bus #0
+
+
+AMD Family 16h Models 00h-0Fh CPU - Root Complex
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Root Complex"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Root Complex"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:0:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1536&SUBSYS_15361022&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1536&SUBSYS_15361022&REV_00\3&11583659&0&00"
+"Location Paths","PCIROOT(0)#PCI(0000)"
+
+ATI/AMD Radeon HD 8330 (Kabini)
+
+"Nombre del dispositivo:","ATI/AMD Radeon HD 8330 (Kabini)"
+"Nombre del dispositivo original:","ATI/AMD Radeon HD 8330 (Kabini)"
+"Clase de dispositivo:","VGA Compatible Adapter"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:1:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1002&DEV_9832&SUBSYS_2171103C&REV_00"
+"Versión:","2.0"
+"Ancho actual del enlace:","No negociado"
+"Velocidad máxima de enlace:","5.0 GT/s"
+"Tipo de dispositivo / puerto:","Extremo integrado del complejo raíz"
+"Ranura implementada:","No"
+"Emergency Power Reduction:","No soportado"
+"Active State Power Management (ASPM) Support:","Ninguna"
+"Active State Power Management (ASPM) Status:","Deshabilitado"
+"L0s Exit Latency:","< 64 ns"
+"L1 Exit Latency:","< 1 us"
+"Maximum Payload Size Supported:","256 bytes"
+"Maximum Payload Size:","128 bytes"
+"Soporte BAR redimensionable:","No soportado"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","INTA#"
+"Dirección base de memoria 0","C0000000"
+"Dirección base de memoria 2","D0000000"
+"Dirección base de E/S 4","F000"
+"Dirección base de memoria 5","FEB00000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","Advanced Micro Devices, Inc."
+"Descripción del controlador:","AMD Radeon HD 8330"
+"Proveedor de controladores:","Advanced Micro Devices, Inc."
+"Versión del controlador:","27.20.1034.6"
+"Versión del paquete del controlador AMD:","20.10.35.02-200821a-360470C-ATI"
+"AMD Software Driver Version:","20.10.35.02"
+"Fecha del controlador:","20-Aug-2020"
+"DCH/UWD Driver:","Capaz"
+"DeviceInstanceId","PCI\VEN_1002&DEV_9832&SUBSYS_2171103C&REV_00\3&11583659&0&08"
+"Location Paths","PCIROOT(0)#PCI(0100)"
+
+AMD Family 16h Models 00h-0Fh CPU - Host Bridge
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Host Bridge"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Host Bridge"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:2:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1538&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1538&SUBSYS_00000000&REV_00\3&11583659&0&10"
+"Location Paths","PCIROOT(0)#PCI(0200)"
+
+AMD Thebe-J/Thebe+/Kabini/Mullins - P2P Bridge for UMI link/P2P PCIe GPP Bridge
+
+"Nombre del dispositivo:","AMD Thebe-J/Thebe+/Kabini/Mullins - P2P Bridge for UMI link/P2P PCIe GPP Bridge"
+"Nombre del dispositivo original:","AMD Thebe-J/Thebe+/Kabini/Mullins - P2P Bridge for UMI link/P2P PCIe GPP Bridge"
+"Clase de dispositivo:","PCI-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:2:5"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1439&SUBSYS_00000000&REV_00"
+"Versión:","2.0"
+"Ancho máximo del enlace:","x1"
+"Ancho actual del enlace:","x1"
+"Velocidad máxima de enlace:","5.0 GT/s"
+"Velocidad de enlace actual:","2.5 GT/s"
+"Tipo de dispositivo / puerto:","Puerto raíz del complejo raíz PCI Express"
+"Ranura implementada:","Sí"
+"Hot-Plug:","No capaz"
+"Hot-Plug Surprise:","No capaz"
+"Emergency Power Reduction:","No soportado"
+"Active State Power Management (ASPM) Support:","L0s and L1"
+"Active State Power Management (ASPM) Status:","Deshabilitado"
+"L0s Exit Latency:","256 - 512 ns"
+"L1 Exit Latency:","32 - 64 us"
+"Maximum Payload Size Supported:","256 bytes"
+"Maximum Payload Size:","128 bytes"
+"Soporte BAR redimensionable:","No soportado"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","INTA#"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puerto raíz PCI Express"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3996"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1439&SUBSYS_12341022&REV_00\3&11583659&0&15"
+"Location Paths","PCIROOT(0)#PCI(0205)"
+
+PCI Express x1 Bus #1
+
+
+RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
+
+"Nombre del dispositivo:","RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC"
+"Nombre del dispositivo original:","RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC"
+"Clase de dispositivo:","Ethernet Adapter"
+"ID de revisión:","C"
+"Número de dirección PCI (Bus: Dispositivo: Función):","1:0:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_10EC&DEV_8168&SUBSYS_2171103C&REV_0C"
+"Versión:","1.1"
+"Ancho máximo del enlace:","x1"
+"Ancho actual del enlace:","x1"
+"Velocidad máxima de enlace:","2.5 GT/s"
+"Velocidad de enlace actual:","2.5 GT/s"
+"Tipo de dispositivo / puerto:","Punto final PCI Express"
+"Ranura implementada:","No"
+"Emergency Power Reduction:","No soportado"
+"Active State Power Management (ASPM) Support:","L0s and L1"
+"Active State Power Management (ASPM) Status:","Deshabilitado"
+"L0s Exit Latency:",">4 us"
+"L1 Exit Latency:","32 - 64 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Soporte BAR redimensionable:","No soportado"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","INTA#"
+"Dirección base de E/S 0","E000"
+"Dirección base de memoria 2","FEA00000"
+"Dirección base de memoria 4","D0800000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","Realtek"
+"Descripción del controlador:","Controladora de la familia Realtek PCIe GbE"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","9.1.410.2015"
+"Fecha del controlador:","09-Apr-2015"
+"DeviceInstanceId","PCI\VEN_10EC&DEV_8168&SUBSYS_2171103C&REV_0C\01000000684CE00000"
+"Location Paths","PCIROOT(0)#PCI(0205)#PCI(0000)"
+
+AMD Bolton - USB 3.0 xHCI Controller [A1]
+
+"Nombre del dispositivo:","AMD Bolton - USB 3.0 xHCI Controller [A1]"
+"Nombre del dispositivo original:","AMD Bolton - USB 3.0 xHCI Controller [A1]"
+"Clase de dispositivo:","USB xHCI Controller"
+"ID de revisión:","1 [A1]"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:16:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_7814&SUBSYS_2171103C&REV_01"
+"Versión:","2.0"
+"Ancho actual del enlace:","No negociado"
+"Velocidad máxima de enlace:","5.0 GT/s"
+"Tipo de dispositivo / puerto:","Extremo integrado del complejo raíz"
+"Ranura implementada:","No"
+"Emergency Power Reduction:","No soportado"
+"Active State Power Management (ASPM) Support:","Ninguna"
+"Active State Power Management (ASPM) Status:","Deshabilitado"
+"L0s Exit Latency:","< 64 ns"
+"L1 Exit Latency:","< 1 us"
+"Maximum Payload Size Supported:","128 bytes"
+"Maximum Payload Size:","128 bytes"
+"Soporte BAR redimensionable:","No soportado"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","INTA#"
+"Dirección base de memoria 0","FEB64000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Versión USB admitida:","3.0"
+"Fabricante del controlador:","Controladora de host USB genérico xHCI"
+"Descripción del controlador:","Controladora de host USB genérico compatible con xHCI"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3996"
+"Fecha del controlador:","17-Jan-2024"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7814&SUBSYS_2171103C&REV_01\3&11583659&0&80"
+"Location Paths","PCIROOT(0)#PCI(1000)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+AMD Hudson-2/3/4 - SATA AHCI Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - SATA AHCI Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - SATA AHCI Controller"
+"Clase de dispositivo:","SATA AHCI Controller"
+"ID de revisión:","40"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:17:0"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_7801&SUBSYS_2171103C&REV_40"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","INTA#"
+"Dirección base de E/S 0","F140"
+"Dirección base de E/S 1","F130"
+"Dirección base de E/S 2","F120"
+"Dirección base de E/S 3","F110"
+"Dirección base de E/S 4","F100"
+"Dirección base de memoria 5","FEB6A000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Velocidad de interfaz admitida:","Gen3 6.0 Gbps"
+"Número de puertos:","2"
+"Soporte SATA externo:","No capaz"
+"Aggressive Link Power Management:","Capaz"
+"Staggered Spin-up:","No capaz"
+"Mechanical Presence Switch:","Capaz"
+"Command Queue Acceleration:","Capaz"
+"64-bit Addressing:","Capaz"
+"Estado AHCI:","Activado"
+"Versión AHCI:","1.30"
+"Puertos implementados:","0, 1"
+"Estado del puerto:","Dispositivo presente, comunicación Phy establecida"
+"Velocidad de interfaz actual:","Gen3 6.0 Gbps"
+"Puerto SATA externo:","No capaz"
+"Hot Plug:","No capaz"
+"Tipo de dispositivo:","SATA"
+"Estado del puerto:","Dispositivo presente, comunicación Phy no establecida"
+"Velocidad de interfaz actual:","Gen1 1.5 Gbps"
+"Puerto SATA externo:","No capaz"
+"Hot Plug:","No capaz"
+"Tipo de dispositivo:","SATA"
+"Fabricante del controlador:","Controladora SATA AHCI estándar"
+"Descripción del controlador:","Controladora SATA AHCI estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7801&SUBSYS_2171103C&REV_40\3&11583659&0&88"
+"Location Paths","PCIROOT(0)#PCI(1100)"
+
+AMD Hudson-2/3/4 - USB OHCI Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - USB OHCI Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - USB OHCI Controller"
+"Clase de dispositivo:","USB OHCI Controller"
+"ID de revisión:","39"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:18:0"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_7807&SUBSYS_2171103C&REV_39"
+"Línea de interrupción:","IRQ18"
+"Pin de interrupción:","INTA#"
+"Dirección base de memoria 0","FEB69000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","Capaz"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Controladora de host USB OpenHCD estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4170"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7807&SUBSYS_2171103C&REV_39\3&11583659&0&90"
+"Location Paths","PCIROOT(0)#PCI(1200)"
+
+USB Root Hub
+
+
+[Port1] : Lenovo, PID=608C
+
+"Fabricante del dispositivo:","LiteOn"
+"Nombre del producto:","Lenovo Calliope USB Keyboard"
+"Número de serie:","N/A"
+"Versión USB admitida:","2.00"
+"Velocidad del dispositivo USB:","USB 1.1 Low-speed"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"ID de hardware:","USB\VID_17EF&PID_608C"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4046"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_17EF&PID_608C\5&15AFE10&0&1"
+"Location Paths","PCIROOT(0)#PCI(1200)#USBROOT(0)#USB(1)"
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : Genius, PID=0186
+
+"Fabricante del dispositivo:","KYE SYSTEMS CORP."
+"Nombre del producto:","Wired Mouse"
+"Número de serie:","N/A"
+"Versión USB admitida:","1.10"
+"Velocidad del dispositivo USB:","USB 1.1 Low-speed"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"ID de hardware:","USB\VID_0458&PID_0186"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4046"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_0458&PID_0186\5&15AFE10&0&4"
+"Location Paths","PCIROOT(0)#PCI(1200)#USBROOT(0)#USB(4)"
+
+AMD Hudson-2/3/4 - USB 2.0 EHCI Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - USB 2.0 EHCI Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - USB 2.0 EHCI Controller"
+"Clase de dispositivo:","USB EHCI Controller"
+"ID de revisión:","39"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:18:2"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_7808&SUBSYS_2171103C&REV_39"
+"Línea de interrupción:","IRQ17"
+"Pin de interrupción:","INTB#"
+"Dirección base de memoria 0","FEB68000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","Capaz"
+"Versión USB admitida:","2.0"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Controlador de host de PCI a USB mejorado"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4170"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7808&SUBSYS_2171103C&REV_39\3&11583659&0&92"
+"Location Paths","PCIROOT(0)#PCI(1202)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+AMD Hudson-2/3/4 - USB OHCI Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - USB OHCI Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - USB OHCI Controller"
+"Clase de dispositivo:","USB OHCI Controller"
+"ID de revisión:","39"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:19:0"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_7807&SUBSYS_2171103C&REV_39"
+"Línea de interrupción:","IRQ18"
+"Pin de interrupción:","INTA#"
+"Dirección base de memoria 0","FEB67000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","Capaz"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Controladora de host USB OpenHCD estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4170"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7807&SUBSYS_2171103C&REV_39\3&11583659&0&98"
+"Location Paths","PCIROOT(0)#PCI(1300)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+AMD Hudson-2/3/4 - USB 2.0 EHCI Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - USB 2.0 EHCI Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - USB 2.0 EHCI Controller"
+"Clase de dispositivo:","USB EHCI Controller"
+"ID de revisión:","39"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:19:2"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_7808&SUBSYS_2171103C&REV_39"
+"Línea de interrupción:","IRQ17"
+"Pin de interrupción:","INTB#"
+"Dirección base de memoria 0","FEB66000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","Capaz"
+"Versión USB admitida:","2.0"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Controlador de host de PCI a USB mejorado"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4170"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_7808&SUBSYS_2171103C&REV_39\3&11583659&0&9A"
+"Location Paths","PCIROOT(0)#PCI(1302)"
+
+USB Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+AMD Hudson-2/3/4 - SMBus and ACPI Controller [A1]
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - SMBus and ACPI Controller [A1]"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - SMBus and ACPI Controller [A1]"
+"Clase de dispositivo:","SMBus (System Management Bus)"
+"ID de revisión:","3A [A1]"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:20:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_780B&SUBSYS_2171103C&REV_3A"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","AMD"
+"Descripción del controlador:","Controladora de bus SM"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_780B&SUBSYS_2171103C&REV_3A\3&11583659&0&A0"
+"Location Paths","PCIROOT(0)#PCI(1400)"
+
+AMD Hudson-2/3/4 - High Definition Audio Controller
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - High Definition Audio Controller"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - High Definition Audio Controller"
+"Clase de dispositivo:","High Definition Audio"
+"ID de revisión:","2"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:20:2"
+"PCI Latency Timer:","32"
+"ID de hardware:","PCI\VEN_1022&DEV_780D&SUBSYS_2171103C&REV_02"
+"Línea de interrupción:","IRQ16"
+"Pin de interrupción:","INTA#"
+"Dirección base de memoria 0","FEB60000"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","Microsoft"
+"Descripción del controlador:","Controladora de High Definition Audio"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","18-Oct-2023"
+"DeviceInstanceId","PCI\VEN_1022&DEV_780D&SUBSYS_2171103C&REV_02\3&11583659&0&A2"
+"Location Paths","PCIROOT(0)#PCI(1402)"
+
+AMD Hudson-2/3/4 - LPC Bridge
+
+"Nombre del dispositivo:","AMD Hudson-2/3/4 - LPC Bridge"
+"Nombre del dispositivo original:","AMD Hudson-2/3/4 - LPC Bridge"
+"Clase de dispositivo:","PCI-to-ISA Bridge"
+"ID de revisión:","11"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:20:3"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_780E&SUBSYS_2171103C&REV_11"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Activado"
+"Running At 66 MHz:","Capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI ISA estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_780E&SUBSYS_2171103C&REV_11\3&11583659&0&A3"
+"Location Paths","PCIROOT(0)#PCI(1403)"
+
+AMD Family 16h Models 00h-0Fh CPU - Link Control
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Link Control"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Link Control"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:0"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1530&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1530&SUBSYS_00000000&REV_00\3&11583659&0&C0"
+"Location Paths","PCIROOT(0)#PCI(1800)"
+
+AMD Family 16h Models 00h-0Fh CPU - Address Map
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Address Map"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Address Map"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:1"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1531&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1531&SUBSYS_00000000&REV_00\3&11583659&0&C1"
+"Location Paths","PCIROOT(0)#PCI(1801)"
+
+AMD Family 16h Models 00h-0Fh CPU - DRAM Controller
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - DRAM Controller"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - DRAM Controller"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:2"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1532&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1532&SUBSYS_00000000&REV_00\3&11583659&0&C2"
+"Location Paths","PCIROOT(0)#PCI(1802)"
+
+AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:3"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1533&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1533&SUBSYS_00000000&REV_00\3&11583659&0&C3"
+"Location Paths","PCIROOT(0)#PCI(1803)"
+
+AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 2
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 2"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 2"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:4"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1534&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1534&SUBSYS_00000000&REV_00\3&11583659&0&C4"
+"Location Paths","PCIROOT(0)#PCI(1804)"
+
+AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 3
+
+"Nombre del dispositivo:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 3"
+"Nombre del dispositivo original:","AMD Family 16h Models 00h-0Fh CPU - Miscellaneous Control 3"
+"Clase de dispositivo:","Host-to-PCI Bridge"
+"ID de revisión:","0"
+"Número de dirección PCI (Bus: Dispositivo: Función):","0:24:5"
+"PCI Latency Timer:","0"
+"ID de hardware:","PCI\VEN_1022&DEV_1535&SUBSYS_00000000&REV_00"
+"Línea de interrupción:","N/A"
+"Pin de interrupción:","N/A"
+"Bus Mastering:","Deshabilitado"
+"Running At 66 MHz:","No capaz"
+"Fast Back-to-Back Transactions:","No capaz"
+"Fabricante del controlador:","(Dispositivos de sistema estándar)"
+"Descripción del controlador:","Puente PCI de CPU host estándar"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","PCI\VEN_1022&DEV_1535&SUBSYS_00000000&REV_00\3&11583659&0&C5"
+"Location Paths","PCIROOT(0)#PCI(1805)"
+
+Adaptador gráfico
+
+
+AMD Radeon HD 8330
+
+"Chipset de gráficos:","AMD Radeon HD 8330"
+"Nombre en clave del chipset de gráficos:","Kabini"
+"Memoria gráfica:","512 MBytes de DDR3 SDRAM"
+"Tarjeta grafica:","AMD Radeon HD 8330 (Kabini) [Hewlett-Packard]"
+"Bus de tarjeta gráfica:","PCIe v2.0 x0 (5.0 GT/s) @ [DISABLED]"
+"GPU Type:","Integrated"
+"Gráficos RAMDAC:","Internal DAC(400MHz)"
+"Versión de BIOS de video:","015.033.000.001"
+"Frecuencia del procesador de gráficos:","266.7 MHz"
+"Frecuencia de memoria gráfica:","333.0 MHz (Eficaz 666.0 MHz)"
+"Ancho del bus de memoria gráfica:","128-bit"
+"Número de ROP:","4"
+"Número de sombreadores unificados:","128"
+"Número de TMU (Texture Mapping Units):","8"
+"Versión de firmware SMU:","0.12.19"
+"Soporte de barra redimensionable (ReBAR):","No soportado"
+"ID de hardware:","PCI\VEN_1002&DEV_9832&SUBSYS_2171103C&REV_00"
+"Ubicación PCI (Bus:Dispositivo:Función):","0:01:0"
+"Fabricante del controlador:","Advanced Micro Devices, Inc."
+"Descripción del controlador:","AMD Radeon HD 8330"
+"Proveedor de controladores:","Advanced Micro Devices, Inc."
+"Versión del controlador:","27.20.1034.6"
+"Versión del paquete del controlador AMD:","20.10.35.02-200821a-360470C-ATI"
+"AMD Software Driver Version:","20.10.35.02"
+"Fecha del controlador:","20-Aug-2020"
+"DCH/UWD Driver:","Capaz"
+"DeviceInstanceId","PCI\VEN_1002&DEV_9832&SUBSYS_2171103C&REV_00\3&11583659&0&08"
+"Location Paths","PCIROOT(0)#PCI(0100)"
+
+Monitor
+
+
+Hewlett-Packard [Unknown Model: HWP3005]
+
+"Nombre del monitor:","Hewlett-Packard [Unknown Model: HWP3005]"
+"Nombre del monitor (del fabricante):","HP LV1911    "
+"Número de serie:","6CM31719F9   "
+"Fecha de manufactura:","Semana: 17, Año: 2013"
+"ID de hardware del monitor:","Monitor\HWP3005"
+"Máx. Tamaño vertical:","23 cm"
+"Máx. Tamaño horizontal:","41 cm"
+"Frecuencia horizontal:","24 - 83 kHz"
+"Frecuencia vertical:","50 - 76 Hz"
+"Reloj máximo de píxeles:","140 MHz"
+"Señal de entrada:","Analógico: 0.700 V / 0.000 V (0.700 V p-p)"
+"Tipo de visualización:","color RGB"
+"Gamma Factor:","2.20"
+"Standby:","No soportado"
+"Suspend:","No soportado"
+"Active Off:","Soportado"
+"Standard Colour Space (sRGB) Default:","Soportado"
+"Preferred Timing Mode:","Soportado"
+"Default GTF (Continuous Frequency):","No soportado"
+"Serration VSync:","No soportado"
+"Sync On Green:","No soportado"
+"Composite Sync:","No soportado"
+"Separate Syncs:","Soportado"
+"Blank-to-black Setup:","No soportado"
+"1280 x 720","60 Hz"
+"1280 x 1024","60 Hz"
+"1366 x 768","410 x 230 mm, Reloj de píxeles 85.50 MHz"
+"Fabricante del controlador:","(Tipo de monitor estándar)"
+"Descripción del controlador:","Monitor PnP genérico"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.3636"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","DISPLAY\HWP3005\4&39182126&0&UID256"
+
+Unidades de disco
+
+
+Unidades (S)ATA/ATAPI
+
+
+ST500DM002-1BD142
+
+"Controlador de disco:","Serial ATA 6Gb/s @ 6Gb/s"
+"Controlador de host:","AMD Hudson-2/3/4 - SATA AHCI Controller"
+"Modelo de unidad:","Seagate ST500DM002-1BD142"
+"Revisión de firmware de la unidad:","HP74"
+"Número de serie de la unidad:","Z6E5VL62"
+"Nombre mundial (WWN):","5000C500671A786B"
+"Capacidad de la unidad:","476,940 MBytes (500 GB)"
+"Drive Capacity [MB]:","476940"
+"Tasa de rotación de medios:","7200 RPM"
+"Versión principal de ATA admitida:","ATA/ATAPI-5, ATA/ATAPI-6, ATA/ATAPI-7, ATA8-ACS"
+"Versión secundaria de ATA admitida:","ATA8-ACS version 4"
+"Versión de transporte ATA admitida:","SATA 3.0"
+"Número de cilindros:","16383"
+"Número de cabezas:","16"
+"Sectores por pista:","63"
+"Número de bytes ECC:","4"
+"Número de sectores:","16514064"
+"Total de sectores LBA de 48 bits:","976773168"
+"Tamaño del sector lógico:","512 Bytes"
+"Tamaño del búfer/caché:","16384 KBytes"
+"Sectores por interrupción:","Total: 16"
+"Máx. Modo de transferencia PIO:","4"
+"Multiword DMA Mode:","Total: 2, Active: 2"
+"Singleword DMA Mode:","Total: -, Active: -"
+"Ultra-DMA Mode:","Total: 5 (ATA-100), Inactive"
+"Max. Multiword DMA Transfer Rate:","16.7 MBytes/s"
+"Max. PIO with IORDY Transfer Rate:","16.7 MBytes/s"
+"Max. PIO w/o IORDY Transfer Rate:","16.7 MBytes/s"
+"Ancho de transferencia:","16-bit"
+"Native Command Queuing:","Soportado, Máx. Profundidad: 32"
+"Comando TRIM:","No soportado"
+"Unidad fija:","Presente"
+"Unidad extraíble:","No presente"
+"Almacenamiento magnético:","Presente"
+"Modo LBA:","Soportado"
+"Modo DMA:","Soportado"
+"IORDY:","Soportado"
+"IORDY Deshabilitar:","Soportado"
+"Caché grabable:","Presente, Activo"
+"Función SMART:","Presente, Activo"
+"Característica de seguridad:","Presente, Inactivo"
+"Función de medios extraíbles:","No presente, Deshabilitado"
+"Administración de energía:","Presente, Activo"
+"Administración avanzada de energía:","No presente, Inactivo"
+"Interfaz de paquetes:","No presente, Deshabilitado"
+"Búfer de anticipación:","Presente, Activo"
+"Área Protegida del Anfitrión:","No presente, Deshabilitado"
+"Encendido en modo de espera:","Soportado, Inactivo"
+"Gestión Acústica Automática:","No soportado, Inactivo"
+"48-bit LBA:","Soportado, Activo"
+"Administración de energía del enlace iniciado por el host (HIPM):","No soportado"
+"Administración de energía de enlace iniciada por dispositivo (DIPM):","Soportado, Deshabilitado"
+"In-Order Data Delivery:","No soportado"
+"Control de funciones de hardware:","No soportado"
+"Conservación de la configuración del software:","Soportado, Activado"
+"NCQ Autosense:","No soportado"
+"Link Power State Device Sleep:","No soportado"
+"Función de información híbrida:","No soportado"
+"Asistencia de reconstrucción:","No soportado"
+"Deshabilitar energía:","No soportado"
+"All Write Cache Non-Volatile:","No soportado"
+"Número extendido de sectores direccionables por el usuario:","No soportado"
+"CFast Specification:","No soportado"
+"Información de prioridad de NCQ:","No soportado"
+"Host Automatic Partial to Slumber Transitions:","No soportado"
+"Device Automatic Partial to Slumber Transitions:","No soportado"
+"NCQ Streaming:","No soportado"
+"Comando de gestión de colas NCQ:","No soportado"
+"DevSleep to Reduced Power State:","No soportado"
+"Out Of Band Management Interface:","No soportado"
+"Característica de condiciones de energía extendida:","No soportado"
+"Función de informe de datos de sentido:","No soportado"
+"Función de control de caída libre:","No soportado"
+"Función de escritura, lectura y verificación:","Soportado, Deshabilitado"
+"Característica de seguridad:","Soportado"
+"Estado de seguridad:","Deshabilitado"
+"Seguridad bloqueada:","Deshabilitado"
+"Seguridad congelada:","Activado"
+"Borrado de seguridad mejorado:","Soportado"
+"Sanitize Feature:","No soportado"
+"Sanitize Device - Crypto Scramble:","No soportado"
+"Sanitize Device - Overwrite:","No soportado"
+"Sanitize Device - Block Erase:","No soportado"
+"Sanitize Device - Antifreeze Lock:","No soportado"
+"Device Encrypts All User Data:","No soportado"
+"Trusted Computing:","No soportado"
+"[01] Tasa de errores en la lectura:","100/6, Peor: 99 (Data = 47504, 0)"
+"[03] Spin Up Time:","100/Siempre normales, Peor: 99"
+"[04] Recuento de inicio/parada:","94/20, Peor: 94 (Data = 6620, 0)"
+"[05] Reasignado el conteo del sector:","100/36, Peor: 100"
+"[07] Tasa de error de búsqueda:","78/30, Peor: 60 (Data = 424986657, 6)"
+"[09] Número de ciclos/horas de encendido:","56/Siempre normales, Peor: 56 (38997 horas / 4.45 años)"
+"[0A] Giro número de reintentos:","100/97, Peor: 100"
+"[0C] Recuento de ciclos de potencia:","94/20, Peor: 94 (Data = 6613, 0)"
+"[B4] Recuento de bloques reservados no utilizados (total):","100/Siempre normales, Peor: 100 (Data = 1765584652, 0)"
+"[B7] Desplazamiento descendente de la interfaz SATA/bloque defectuoso del tiempo de ejecución:","100/Siempre normales, Peor: 100"
+"[B8] Recuento de detección de errores de extremo a extremo:","100/97, Peor: 100"
+"[BB] Errores no corregibles informados:","100/Siempre normales, Peor: 100"
+"[BC] Recuento de tiempo de espera del comando:","100/Siempre normales, Peor: 99 (Data = 65546, 1)"
+"[BD] High Fly escribe:","100/Siempre normales, Peor: 100"
+"[BE] Temperatura del flujo de aire / Recuento excedido:","77/45, Peor: 64 (23.0 °C)"
+"[C2] Temperatura:","23/Siempre normales, Peor: 40 (23.0 °C)"
+"[C3] Hardware ECC recuperado:","51/Siempre normales, Peor: 28 (Data = 47504, 0)"
+"[C4] Recuento de eventos de reasignación:","100/36, Peor: 100"
+"[C5] Recuento actual de sectores pendientes:","100/Siempre normales, Peor: 100"
+"[C6] Recuento de sectores incorregibles fuera de línea:","100/Siempre normales, Peor: 100"
+"[C7] Tasa de error UltraDMA/SATA CRC:","200/Siempre normales, Peor: 200"
+
+TSSTcorp CDDVDW TS-H653Z
+
+"Modelo de unidad:","TSSTcorp CDDVDW TS-H653Z"
+"Revisión de firmware de la unidad:","4403"
+"Número de serie:","Q6686GAS202558      "
+"Tipo de dispositivo:","DVD+R DL"
+"La unidad puede leer:","CD-R, CD-RW, DVD-R, DVD-RW, DVD+R, DVD+RW, DVD+R DL"
+"La unidad puede escribir:","CD-RW, DVD-R, DVD-RW, DVD+R, DVD+RW, DVD+R DL"
+
+Audio
+
+
+AMD Hudson-2/3/4 - High Definition Audio Controller
+
+"Adaptador de sonido:","AMD Hudson-2/3/4 - High Definition Audio Controller"
+"ID de hardware del controlador de audio:","PCI\VEN_1022&DEV_780D&SUBSYS_2171103C&REV_02"
+"Códec de audio de alta definición:","RealTek ALC221"
+"ID de hardware del códec de audio:","HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2171&REV_1000"
+"Fabricante del controlador:","Realtek"
+"Descripción del controlador:","Realtek High Definition Audio"
+"Proveedor de controladores:","Realtek Semiconductor Corp."
+"Versión del controlador:","6.0.1.7548"
+"Fecha del controlador:","29-Jun-2015"
+"DeviceInstanceId","HDAUDIO\FUNC_01&VEN_10EC&DEV_0221&SUBSYS_103C2171&REV_1000\4&2E5EF776&0&0001"
+
+Red
+
+
+RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC
+
+"Tarjeta de red:","RealTek Semiconductor RTL8168/8111 PCI-E Gigabit Ethernet NIC"
+"Descripción del proveedor:","Realtek Ethernet Controller"
+"Dirección MAC:","9C-B6-54-EF-6E-CB"
+"Velocidad máxima de enlace:","1000 Mbps"
+"Tamaño del búfer de transmisión:","193792 Bytes"
+"Tamaño del búfer de recepción:","775168 Bytes"
+"ID de hardware:","PCI\VEN_10EC&DEV_8168&SUBSYS_2171103C&REV_0C"
+"Fabricante del controlador:","Realtek"
+"Descripción del controlador:","Controladora de la familia Realtek PCIe GbE"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","9.1.410.2015"
+"Fecha del controlador:","09-Apr-2015"
+"DeviceInstanceId","PCI\VEN_10EC&DEV_8168&SUBSYS_2171103C&REV_0C\01000000684CE00000"
+"Location Paths","PCIROOT(0)#PCI(0205)#PCI(0000)"
+
+Puertos
+
+
+Puertos seriales
+
+
+COM1
+
+
+USB
+
+
+Controlador de host de PCI a USB mejorado
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+Controlador de host eXtensible AMD USB 3.0 - 1.0 (Microsoft)
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+Controlador de host de PCI a USB mejorado
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+
+
+Controladora de host USB OpenHCD estándar
+
+
+Root Hub
+
+
+[Port1] : Lenovo, PID=608C
+
+"Fabricante del dispositivo:","LiteOn"
+"Nombre del producto:","Lenovo Calliope USB Keyboard"
+"Número de serie:","N/A"
+"Versión USB admitida:","2.00"
+"Velocidad del dispositivo USB:","USB 1.1 Low-speed"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"ID de hardware:","USB\VID_17EF&PID_608C"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4046"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_17EF&PID_608C\5&15AFE10&0&1"
+"Location Paths","PCIROOT(0)#PCI(1200)#USBROOT(0)#USB(1)"
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : Genius, PID=0186
+
+"Fabricante del dispositivo:","KYE SYSTEMS CORP."
+"Nombre del producto:","Wired Mouse"
+"Número de serie:","N/A"
+"Versión USB admitida:","1.10"
+"Velocidad del dispositivo USB:","USB 1.1 Low-speed"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"ID de hardware:","USB\VID_0458&PID_0186"
+"Fabricante del controlador:","(Controladora de host USB estándar)"
+"Descripción del controlador:","Dispositivo compuesto USB"
+"Proveedor de controladores:","Microsoft"
+"Versión del controlador:","10.0.19041.4046"
+"Fecha del controlador:","20-Jun-2006"
+"DeviceInstanceId","USB\VID_0458&PID_0186\5&15AFE10&0&4"
+"Location Paths","PCIROOT(0)#PCI(1200)#USBROOT(0)#USB(4)"
+
+Controladora de host USB OpenHCD estándar
+
+
+Root Hub
+
+
+[Port1] : No Device Connected
+
+
+[Port2] : No Device Connected
+
+
+[Port3] : No Device Connected
+
+
+[Port4] : No Device Connected
+

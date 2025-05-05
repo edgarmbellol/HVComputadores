@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block title %}Lista de Equipos{% endblock %}
+
+{% block content %}
+<div class="row mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">
+                    <i class="fas fa-desktop me-2"></i>
+                    Lista de Equipos Activos
+                </h2>
+                <p class="card-text text-muted">
+                    Gestión y seguimiento de equipos de cómputo
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 d-flex align-items-center justify-content-end">
+        <a href="{{ url_for('mantenimientos') }}" class="btn btn-success btn-lg">
+            <i class="fas fa-tools me-2"></i> Mantenimientos
+        </a>
+    </div>
+</div>
+
+<div class="d-none d-lg-block">
+    <div class="table-responsive" style="overflow-x:auto;">
+        <table class="table table-hover align-middle mb-0" style="min-width: 700px;">
+            <thead class="align-middle">
+                <tr>
+                    <th><i class="fas fa-barcode me-1"></i> Placa Serial</th>
+                    <th><i class="fas fa-user me-1"></i> Responsable</th>
+                    <th><i class="fas fa-map-marker-alt me-1"></i> Ubicación</th>
+                    <th><i class="fas fa-building me-1"></i> Sede</th>
+                    <th><i class="fas fa-laptop me-1"></i> Nombre Equipo</th>
+                    <th><i class="fas fa-cogs me-1"></i> Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for equipo in equipos %}
+                <tr>
+                    <td>{{ equipo.placaSerial }}</td>
+                    <td>{{ equipo.responsable }}</td>
+                    <td>{{ equipo.Ubicacion }}</td>
+                    <td>{{ equipo.Sede }}</td>
+                    <td>{{ equipo.nombreEquipo }}</td>
+                    <td>
+                        <div class="btn-group w-100 flex-wrap flex-md-nowrap" role="group" style="min-width: 210px;">
+                            <a href="{{ url_for('editar', direccionMac=equipo.direccionMac) }}" 
+                               class="btn btn-primary btn-sm px-3 py-2 d-flex align-items-center justify-content-center mb-2 mb-md-0 me-0 me-md-2">
+                                <i class="fas fa-edit me-1"></i> Editar
+                            </a>
+                            <a href="{{ url_for('hoja_vida_html', direccionMac=equipo.direccionMac) }}" 
+                               class="btn btn-info btn-sm px-3 py-2 d-flex align-items-center justify-content-center mb-2 mb-md-0 me-0 me-md-2" target="_blank">
+                                <i class="fas fa-file-pdf me-1"></i> PDF
+                            </a>
+                            <a href="#" onclick="if(confirm('¿Está seguro de eliminar este equipo?')){ window.location='{{ url_for('eliminar', direccionMac=equipo.direccionMac) }}'; } return false;" 
+                               class="btn btn-danger btn-sm px-3 py-2 d-flex align-items-center justify-content-center">
+                                <i class="fas fa-trash me-1"></i> Eliminar
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                {% else %}
+                <tr>
+                    <td colspan="6" class="text-center">
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle me-2"></i>
+                            No hay equipos activos registrados
+                        </div>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Cards para móviles/tablets -->
+<div class="d-lg-none">
+    <div class="row g-3">
+        {% for equipo in equipos %}
+        <div class="col-12">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-2">
+                        <span class="badge bg-primary me-2"><i class="fas fa-barcode"></i></span>
+                        <strong>{{ equipo.placaSerial }}</strong>
+                    </div>
+                    <div class="mb-1"><i class="fas fa-user me-1"></i> <b>Responsable:</b> {{ equipo.responsable }}</div>
+                    <div class="mb-1"><i class="fas fa-map-marker-alt me-1"></i> <b>Ubicación:</b> {{ equipo.Ubicacion }}</div>
+                    <div class="mb-1"><i class="fas fa-building me-1"></i> <b>Sede:</b> {{ equipo.Sede }}</div>
+                    <div class="mb-1"><i class="fas fa-laptop me-1"></i> <b>Equipo:</b> {{ equipo.nombreEquipo }}</div>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <a href="{{ url_for('editar', direccionMac=equipo.direccionMac) }}" class="btn btn-primary btn-sm w-100">
+                            <i class="fas fa-edit me-1"></i> Editar
+                        </a>
+                        <a href="{{ url_for('hoja_vida_html', direccionMac=equipo.direccionMac) }}" class="btn btn-info btn-sm w-100" target="_blank">
+                            <i class="fas fa-file-pdf me-1"></i> PDF
+                        </a>
+                        <a href="#" onclick="if(confirm('¿Está seguro de eliminar este equipo?')){ window.location='{{ url_for('eliminar', direccionMac=equipo.direccionMac) }}'; } return false;" class="btn btn-danger btn-sm w-100">
+                            <i class="fas fa-trash me-1"></i> Eliminar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12">
+            <div class="alert alert-info text-center">
+                <i class="fas fa-info-circle me-2"></i>
+                No hay equipos activos registrados
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+@media (max-width: 992px) {
+    .table {
+        font-size: 0.92rem;
+    }
+    .btn-group.flex-wrap > .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    .btn-group.flex-wrap {
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    .table th, .table td {
+        padding: 0.4rem 0.3rem;
+    }
+}
+@media (max-width: 576px) {
+    .table {
+        font-size: 0.85rem;
+    }
+    .table th, .table td {
+        padding: 0.3rem 0.2rem;
+    }
+}
+</style>
+{% endblock %} 
